@@ -581,7 +581,7 @@ box-shadow: 0 2px 4px rgba(0,0,0,.2);
   text-decoration: none;
 }
 .content .nav-links li a:hover {
-  color: #DC1AE8;
+  color: purple;
 }
 
 .content input[type="checkbox"] {
