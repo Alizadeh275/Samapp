@@ -202,6 +202,12 @@ form:hover input{
   visibility: visible;
 }
 
+.profile a{
+  padding: 5px;
+  display: inline-block;
+
+}
+
 .profile i{
 	font-size: 22px;
 	padding-top: 4px;
@@ -753,7 +759,7 @@ box-shadow: 0 2px 4px rgba(0,0,0,.2);
 
 
 /* make header responsive*/
-@media  screen and (max-width: 745px) {
+@media  screen and (max-width: 758px) {
 
 .navbar {
   display: none;
