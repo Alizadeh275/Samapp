@@ -207,7 +207,6 @@ border-radius: 4px;
 }
 .inputGroup input:checked ~ label {
   color: #fff;
-  font-weight: bolder;
 }
 .inputGroup input:checked ~ label:before {
   -webkit-transform: translate(-50%, -50%) scale3d(56, 56, 1);
