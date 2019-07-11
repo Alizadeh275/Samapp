@@ -19,6 +19,9 @@
   padding: 20px;
   text-align: center;
   font-family: naz;
+  border: 2px dashed #DC1AE8;
+  border-top: none;
+
 }
 .form input {
   outline: 0;
@@ -170,13 +173,14 @@ body {
 font-family: naz;
 border-radius: 4px;
 
+
 }
 .inputGroup label:before {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   content: '';
-  background-color: lime;
+  background-color: #DC1AE8;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -214,8 +218,8 @@ border-radius: 4px;
   opacity: 1;
 }
 .inputGroup input:checked ~ label:after {
-  background-color: #DC1AE8;
-  border-color: #DC1AE8;
+  background-color: lime;
+  border-color: white;
 }
 .inputGroup input {
   width: 32px;
@@ -243,6 +247,8 @@ border-radius: 4px;
   line-height: 36px;
   background-color: white;
   margin-bottom: 0;
+  border: 2px dashed #DC1AE8;
+  border-bottom: none;
 
 }
 
