@@ -1,3 +1,7 @@
+
+*{
+  box-sizing: border-box;
+}
 .login-page {
   max-width: 360px;
   margin:5% auto;
@@ -12,13 +16,14 @@
   max-width: 360px;
   margin: 0 auto 100px;
   margin-top: -18px;
-  padding: 15px;
+  padding: 20px;
   text-align: center;
   font-family: naz;
 }
 .form input {
   outline: 0;
-  background: #f2f2f2;
+  background: white;
+ /* background: #f2f2f2;*/
   width: 100%;
   border: 0;
   margin: 0 0 15px;
@@ -28,9 +33,10 @@
   font-family: naz;
   direction: ltr;
   float: right;
-  border: 1px solid lime;
-  border-right: 6px solid lime;
-  color: #DC1AE8;
+  border: 1px solid #DC1AE8;
+  border-right: 6px solid #DC1AE8;
+  /*color: #DC1AE8;*/
+  border-radius: 4px;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -46,19 +52,22 @@
   font-weight: bold;
   text-transform: uppercase;
   outline: 0;
-  background: lime;
+  background: #DC1AE8;
+  color: white;
   width: 100%;
   border: 0;
   padding: 15px;
-  color: #FFFFFF;
   font-size: 16px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
   letter-spacing: 1px;
+  border-radius: 4px;
 }
 .form button:hover,.form button:active,.form button:focus {
-  background: #43A047;
+  background: lime;
+  color: white;
+
 }
 .form .message {
   margin: 15px 0 0;
@@ -159,6 +168,7 @@ body {
   transition: color 200ms ease-in;
   overflow: hidden;
 font-family: naz;
+border-radius: 4px;
 
 }
 .inputGroup label:before {
@@ -226,7 +236,7 @@ font-family: naz;
 .form1 {
   width: 100%;
   margin:0 auto;
-  padding: 15px;
+  padding: 20px;
   padding-top: 6px;
   font-size: 18px;
   font-weight: 600;
@@ -249,6 +259,7 @@ h2{
   color: #DC1AE8;
 	margin-bottom: 0;
 	padding: 5px 0;
+
 
 
 }
