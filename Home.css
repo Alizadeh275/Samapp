@@ -548,7 +548,7 @@ p{
 
 }
 .content .nav-links::before {
-  background: lime;
+  background: white;
   content: '';
   left: 0;
   top: 0;
@@ -570,11 +570,11 @@ box-shadow: 0 2px 4px rgba(0,0,0,.2);
   padding: 0;
   direction: rtl;
   margin: 0;
-  color: white;
+  color: purple;
 }
 .content .nav-links li a {
-  background: lime;
-  color: white;
+  background: white;
+  color: #DC1AE8;
   display: block;
   font-size: 18px;
   font-weight: 700;
@@ -587,7 +587,7 @@ box-shadow: 0 2px 4px rgba(0,0,0,.2);
   text-decoration: none;
 }
 .content .nav-links li a:hover {
-  color:purple ;
+  color: purple;
 }
 
 .content input[type="checkbox"] {
