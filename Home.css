@@ -562,7 +562,7 @@ box-shadow: 0 2px 4px rgba(0,0,0,.2);
 
 }
 .content .nav-links li {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid lime;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
@@ -570,7 +570,7 @@ box-shadow: 0 2px 4px rgba(0,0,0,.2);
   padding: 0;
   direction: rtl;
   margin: 0;
-  color: purple;
+  color: lime;
 }
 .content .nav-links li a {
   background: white;
