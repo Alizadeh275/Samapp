@@ -562,7 +562,7 @@ box-shadow: 0 2px 4px rgba(0,0,0,.2);
 
 }
 .content .nav-links li {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid white;
   opacity: 0;
   visibility: hidden;
   transform: translateY(-20px);
@@ -587,7 +587,7 @@ box-shadow: 0 2px 4px rgba(0,0,0,.2);
   text-decoration: none;
 }
 .content .nav-links li a:hover {
-  color: purple;
+  color: lime;
 }
 
 .content input[type="checkbox"] {
