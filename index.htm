@@ -24,13 +24,7 @@
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
-	var m=false;
 $(document).ready(function(){
-
- $(".content input").click(function(){
-    $(".Modal").toggle();
-
-  });
 
 
   $(".content form").click(function(){
@@ -41,21 +35,9 @@ $(document).ready(function(){
 
   $(".content form").mouseleave(function(){
 
-    $(".Modal").trigger("click");
+    $(".Modal").css("display","none");
 
   });
-
-
- $(".Modal").click(function(){
-  	if($(".content .nav-links li").css("visibility")=="visible"){
-  		$(".content input").trigger("click");
-  	}
-		$(".Modal").css("display","none");
-
-  });
-
-
-
 
 
 });
