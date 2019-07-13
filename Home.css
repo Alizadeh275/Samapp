@@ -548,7 +548,7 @@ p{
 
 }
 .content .nav-links::before {
-  background: white;
+  background: lime;
   content: '';
   left: 0;
   top: 0;
@@ -569,15 +569,15 @@ box-shadow: 0 2px 4px rgba(0,0,0,.2);
   padding: 0;
   direction: rtl;
   margin: 0;
-  color: lime;
+  color: white;
 }
 
 .content .nav-links li:not(:last-child) {
 }
 
 .content .nav-links li a {
-  background: white;
-  color: #DC1AE8;
+  background: lime;
+  color: white;
   display: block;
   font-size: 18px;
   font-weight: 700;
