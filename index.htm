@@ -10,6 +10,10 @@
 <link rel="stylesheet" href="Home.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+
+
     <title>سَماپ</title>
     <style>
 @font-face {
@@ -18,9 +22,47 @@
 }
 
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+	var cm=false;
+	var cf=false;
+$(document).ready(function(){
+
+  $(".content form").click(function(){
+    $(".Modal").css("display","block");
+
+  });
+
+  $(".content form").mouseleave(function(){
+  		if(cm){
+  		$(".content input").trigger("click");
+  		}
+		$(".Modal").css("display","none");
+  });
+
+  $(".content input").click(function(){
+    $(".Modal").toggle();
+
+    if(cm==false){
+     cm=true;
+    }
+    else{
+    	cm=false;
+    }
+
+  });
+
+   $(".Modal").click(function(){
+  		$(".content input").trigger("click");
+		$(".Modal").css("display","none");
+
+  });
+
+
+});
+</script>
   </head>
   <body>
-
     <div class="content">
       <nav>
         <input type="checkbox" id="hamburger1" />
@@ -36,6 +78,8 @@
           <li><a href="Login.htm">ورود / عضویت</a></li>
         </ul>
       </nav>
+<div class="Modal"></div>
+
     </div>
 
 <div class="navbar">
