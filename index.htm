@@ -24,39 +24,38 @@
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
-	var cm=false;
-	var cf=false;
+	var m=false;
 $(document).ready(function(){
 
+ $(".content input").click(function(){
+    $(".Modal").toggle();
+
+  });
+
+
   $(".content form").click(function(){
+
     $(".Modal").css("display","block");
 
   });
 
   $(".content form").mouseleave(function(){
-  		if(cm){
-  		$(".content input").trigger("click");
-  		}
-		$(".Modal").css("display","none");
-  });
 
-  $(".content input").click(function(){
-    $(".Modal").toggle();
-
-    if(cm==false){
-     cm=true;
-    }
-    else{
-    	cm=false;
-    }
+    $(".Modal").trigger("click");
 
   });
 
-   $(".Modal").click(function(){
+
+ $(".Modal").click(function(){
+  	if($(".content .nav-links li").css("visibility")=="visible"){
   		$(".content input").trigger("click");
+  	}
 		$(".Modal").css("display","none");
 
   });
+
+
+
 
 
 });
