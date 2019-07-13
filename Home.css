@@ -573,7 +573,6 @@ box-shadow: 0 2px 4px rgba(0,0,0,.2);
 }
 
 .content .nav-links li:not(:last-child) {
-  border-bottom: 1px solid lime;
 }
 
 .content .nav-links li a {

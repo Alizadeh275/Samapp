@@ -255,6 +255,7 @@ border-radius: 4px;
 body {
   background-color: #D1D7DC;
   font-family: 'Fira Sans', sans-serif;
+background-color: rgba(0, 255, 0, .5);
 }
 
 h2{
