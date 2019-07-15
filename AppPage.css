@@ -9,7 +9,7 @@ h1 {
   margin-bottom: 9px;
     color: #DC1AE8;
 
-}		
+}
 
 a {
   background-color: transparent;
@@ -113,7 +113,7 @@ margin-bottom: 100px !important;
 }
 
 .dropdown .dropbtn {
-  font-size: 18px;  
+  font-size: 18px;
   border: none;
   outline: none !important;
   color: white;
@@ -130,7 +130,7 @@ margin-bottom: 100px !important;
 }
 
 .dropdown-content {
-  
+
   float: right;
   display: none;
   position: fixed;
@@ -276,7 +276,7 @@ form:hover input{
 .profile a{
   padding: 5px;
   display: inline-block ;
-  
+
 }
 
 .profile i{
@@ -469,13 +469,14 @@ box-shadow: 0 2px 4px rgba(0,0,0,.4);
     font-weight: bold;
     width: 50%;
     margin: 0px auto;
-    padding-top: 13px;
+    padding-top: 19px;
     color: white;
     text-align: center;
+    font-size: 1.17rem;
   }
 .content form{
     position: relative;
-    top: -48px;
+    top: -42px;
     left: 2px;
     transition: all 1s;
     width: 50px;
@@ -571,7 +572,7 @@ box-shadow: 0 2px 4px rgba(0,0,0,.4);
     width:94%;
     cursor: pointer;
     transform: scale(1, 1);
-} 
+}
 
 
 }
@@ -587,4 +588,3 @@ box-shadow: 0 2px 4px rgba(0,0,0,.4);
   background-color:rgba(0,0,0,.7);
   overflow: auto;
 }
-
