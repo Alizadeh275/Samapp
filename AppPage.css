@@ -44,7 +44,7 @@ span {
 
 button {
   font-family: naz;
-  background-color: #DC1AE8;
+  background-color: lime;
   outline: none;
   border: none;
   color: white;
@@ -466,7 +466,7 @@ box-shadow: 0 2px 4px rgba(0,0,0,.4);
 }
  .content  h3 {
     font-family: naz;
-    font-weight: bold;
+    font-weight: bolder;
     width: 50%;
     margin: 0px auto;
     padding-top: 19px;
