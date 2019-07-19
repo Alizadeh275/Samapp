@@ -541,7 +541,7 @@ box-shadow: 0 2px 4px rgba(0,0,0,.4);
 
 
 /* make header responsive*/
-@media  screen and (max-width: 758px) {
+@media  screen and (max-width: 770px) {
 
 .navbar {
   display: none !important;
@@ -588,3 +588,87 @@ box-shadow: 0 2px 4px rgba(0,0,0,.4);
   background-color:rgba(0,0,0,.7);
   overflow: auto;
 }
+/*    */
+  .nav a {
+    direction: rtl;
+    font-family: naz;
+    color: #DC1AE8;
+  }
+
+.nav a.active{
+  background-color: #DC1AE8;
+}
+
+.nav a:hover {
+  color: lime;
+}
+
+/* not active */
+
+.nav-pills .nav-item  {
+border-right: 1px solid lime;
+border-top: 1px solid lime
+}
+.nav-pills .pill-1  {
+border-left: 1px solid lime;
+
+}
+
+.nav-pills .pill-2 {
+
+}
+
+.nav-pills .pill-3 {
+
+}
+
+
+.nav-pills .pill-4 {
+
+}
+
+.nav-pills .pill-5 {
+}
+
+/* active (faded) */
+
+.nav-pills .nav-item .active {
+
+  border-radius: 0;
+}
+
+.nav-pills .pill-1 .active {
+  background-color: lime;
+  color: white;
+  border-radius: 0;
+}
+
+.nav-pills .pill-2 .active {
+  background-color: lime;
+  color: white;}
+
+.nav-pills .pill-3 .active {
+  background-color: lime;
+  color: white;
+}
+
+
+.nav-pills .pill-4 .active {
+  background-color: lime;
+  color: white;}
+
+.nav-pills .pill-5 .active {
+  background-color: lime;
+  color: white;
+}
+
+hr {
+  background-color: lime;
+}
+
+h3,p{
+  font-family: naz;
+  direction: rtl;
+}
+
+</style>
