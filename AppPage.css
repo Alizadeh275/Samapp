@@ -671,4 +671,65 @@ h3,p{
   direction: rtl;
 }
 
-</style>
+.datasheet li{
+  border-bottom: 1px solid white;
+  direction: rtl;
+  padding: 5px;
+
+}
+
+
+
+      .versions h4{
+        font-family: naz;
+        direction: rtl;
+        color: #DC1AE8;
+        padding: 5px;
+
+      }
+
+.item {
+  border-right: 1px solid white;
+}
+
+.versions .item a{
+  border: 1px solid silver;
+  display: inline-block;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 0;
+  color: white;
+  font-family: naz;
+  direction: rtl;
+  background-color: #6c757d;
+  font-weight: bold;
+}
+
+.item a span{
+  color: white;
+}
+
+.item a:hover{
+  transform: translateY(-1px);
+box-shadow: 0 2px 4px rgba(0,0,0,.2);
+
+}
+
+.item a span:nth-child(2){
+  font-weight: normal;
+  color: silver;
+}
+
+.versions .row {
+
+}
+
+button a{
+  text-decoration: none;
+  color: white;
+}
+
+button a:hover{
+  color: white;
+  text-decoration: none;
+}
