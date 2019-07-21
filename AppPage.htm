@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5mdXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjmdVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<!--fontawesome -->
 
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,6 +22,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <title></title>
 
 	<style type="text/css">
@@ -32,6 +34,7 @@
   font-family: naz;
   src:url("Vazir-FD.ttf");
 }
+
 
 
 
@@ -69,8 +72,10 @@ $(document).ready(function(){
   <i class="fa fa-search"></i>
 </form>
         <ul class="nav-links">
-          <li><a href="#">برنامه ها</a></li>
-          <li><a href="#">بازی ها</a></li>
+          <li><a href="#" class="" style="cursor: pointer;"
+               data-toggle="modal" data-target="#myModal2">برنامه ها</a></li>
+          <li><a href="#" class="" style="cursor: pointer;"
+               data-toggle="modal" data-target="#myModal3">بازی ها</a></li>
           <li><a href="Login.htm">ورود / عضویت</a></li>
         </ul>
       </nav>
@@ -184,7 +189,7 @@ $(document).ready(function(){
       <div class="row flex-row-reverse">
         <div class="col-md-12 bg-light">
           <div class="app-name text-center">
-          <h1 class="text-center float-md-right"> مزرعه شمالی</h1>
+          <h1 class="text-center float-md-right">مدال</h1>
           </div>
         </div>
 
@@ -195,13 +200,193 @@ $(document).ready(function(){
           </div>
           <div class="rating bg-light clearfix">
 
-              <div class="Rate float-lg-right float-none pt-1">
+              <div class="Rate float-lg-right float-none pt-1" style="cursor: pointer;"
+               data-toggle="modal" data-target="#myModal">
     <img src="stars/full-star.png" alt="">
     <img src="stars/full-star.png" alt="">
     <img src="stars/full-star.png" alt="">
-    <img src="stars/full-star.png" alt="">
-    <img src="stars/half-star.png" alt="">
+    <img src="stars/empty-star2.png" alt="">
+    <img src="stars/empty-star2.png" alt="">
   </div>
+
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-right">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="close float-left" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+ <h3 class="text-right">جزئیات امتیازات</h3>
+  <!-- Blue -->
+    <div class="float-left mr-2">
+    <img src="stars/full-star.png" class="mb-1 ml-0" width="20px;" alt="">
+  <span class="mb-1">5</span>
+    </div>
+   <div class="progress" style="height: 22px;">
+   <div class="progress-bar" style="width:80%;background-color: green;">245</div>
+  </div><br>
+  <!-- Green -->
+    <div class="float-left mr-2">
+    <img src="stars/full-star.png" class="mb-1 ml-0" width="20px;" alt="">
+  <span class="mb-1">4</span>
+    </div>
+  <div class="progress" style="height: 22px;">
+    <div class="progress-bar" style="width:50%;background-color: lime;">56</div>
+  </div><br>
+
+  <!-- Turquoise -->
+      <div class="float-left mr-2">
+    <img src="stars/full-star.png" class="mb-1 ml-0" width="20px;" alt="">
+  <span class="mb-1">3</span>
+    </div>
+
+  <div class="progress" style="height: 22px;">
+    <div class="progress-bar" style="width:30%;background-color: yellow;">45</div>
+  </div><br>
+
+  <!-- Orange -->
+    <div class="float-left mr-2">
+    <img src="stars/full-star.png" class="mb-1 ml-0" width="20px;" alt="">
+  <span class="mb-1">2</span>
+    </div>
+  <div class="progress" style="height: 22px;">
+     <div class="progress-bar" style="width:40%;background-color: orange;">5</div>
+  </div><br>
+
+  <!-- Red -->
+      <div class="float-left mr-2">
+    <img src="stars/full-star.png" class="mb-1 ml-0" width="20px;" alt="">
+  <span class="mb-1">1</span>
+    </div>
+  <div class="progress" style="height: 22px;">
+    <div class="progress-bar" style="width:10%;background-color: red;">5</div>
+  </div><br>
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<!---
+-->
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal2">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-right">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="close float-left text-left" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+<div class="row float-right mr-5">
+  <div class="float-right">
+
+<div class="title">
+   <h4 class="text-right">برنامه ها</h4>
+</div>
+<br>
+<ul>
+  <li><a href="">آب و هوا</a></li>
+  <li><a href="">آشپزی و رستوران</a></li>
+  <li><a href="">آموزش</a></li>
+  <li><a href="">ابزارها</a></li>
+  <li><a href="">امورمالی</a></li>
+  <li><a href="">پیام رسان ها</a></li>
+  <li><a href="">خبرها و نشریات</a></li>
+  <li><a href="">خرید</a></li>
+  <li><a href="">دارو و درمان</a></li>
+  <li><a href="">رفت و آمد</a></li>
+  <li><a href="">سبک زندگی</a></li>
+  <li><a href="">سرگرمی</a></li>
+  <li><a href="">سیر و سفر</a></li>
+  <li><a href="">شبکه ها اجتماعی</a></li>
+  <li><a href="">شخصی سازی</a></li>
+  <li><a href="">عکاسی</a></li>
+  <li><a href="">مذهبی</a></li>
+  <li><a href="">موسیقی و صدا</a></li>
+  <li><a href="">ورزشی</a></li>
+  <li><a href="">ویدئو و رسانه</a></li>
+</ul>
+
+  </div>
+</div>
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+ <!-- The Modal -->
+  <div class="modal fade" id="myModal3">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-right">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="close float-left" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+<div class="row float-right mr-5">
+  <div class="float-right text-right">
+<div class="title">
+  <h4>بازی ها</h4>
+</div>
+<br>
+<ul>
+  <li><a href="">آموزشی</a></li>
+  <li><a href="">استراتژی</a></li>
+  <li><a href="">اکشن</a></li>
+  <li><a href="">امتیازی</a></li>
+  <li><a href="">خانوادگی</a></li>
+  <li><a href="">رانندگی</a></li>
+  <li><a href="">شبیه سازی</a></li>
+  <li><a href="">کلمات و دانستنی ها</a></li>
+  <li><a href="">معمایی</a></li>
+  <li><a href="">ورزشی</a></li>
+  <li><a href="">ماجرایی</a></li>
+  <li><a href="">تفننی</a></li>
+</ul>
+  </div>
+</div>
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
 <span class="text-center bg-light" style="direction: ltr;">(<i class="fas fa-user"></i> 45)</span>
 
           </div>
@@ -256,9 +441,10 @@ $(document).ready(function(){
     <div class="col-md-2 bg-light order-3">
       <button class=" mt-4 p-2 w-100" style="border-radius: 5px;outline: none;">دریافت آخرین نسخه</button>
       <button class="btn-secondary mt-1 p-2 w-100" style="border-radius: 5px;outline: none;">
-         <a href="#versions">نسخه ها قبلی 
-         </a>
-         </button>
+        <a href="#versions">نسخه ها قبلی
+        </a>
+        </button>
+
 </div>
 	</div>
 </div>
@@ -266,20 +452,19 @@ $(document).ready(function(){
 
 <br>
 
-
 <div class="container">
   <br>
 <br>
   <!-- Nav pills -->
-  <ul class="nav nav-pills float-right text-right" role="tablist">
+  <ul class="nav nav-pills float-right text-right clearfix" role="tablist">
 
-    <li class="nav-item pill-1">
+    <li class="nav-item pill-1 float-right">
       <a class="nav-link " data-toggle="pill" href="#home">نظرات</a>
     </li>
-    <li class="nav-item pill-2">
+    <li class="nav-item pill-2 float-right">
       <a class="nav-link" data-toggle="pill" href="#menu1">دسترسی ها</a>
     </li>
-    <li class="nav-item pill-3">
+    <li class="nav-item pill-3 float-right">
       <a class="nav-link active" data-toggle="pill" href="#menu2">توضیحات</a>
     </li>
   </ul>
@@ -287,11 +472,11 @@ $(document).ready(function(){
   <div class="tab-content text-right clearfix" >
     <br>
 <hr>
-    <div id="home" class="container tab-pane fade"><br>
+    <div id="home" class="container tab-pane fade" role="tabpanel"><br>
+      <button class="float-left p-2" style="border-radius: 5px;background-color: lime;">نظر جدید <i class="fas fa-plus px-1" style="font-size: 10px;"></i></button>
       <h3>نظرات</h3>
-      <p></p>
     </div>
-    <div id="menu1" class="container tab-pane fade"><br>
+    <div id="menu1" class="container tab-pane fade" role="tabpanel"><br>
       <h3>دسترسی ها</h3>
       <br>
       <ul class="datasheet w-100  float-right">
@@ -339,7 +524,7 @@ $(document).ready(function(){
       </table>
     -->
     </div>
-    <div id="menu2" class="container tab-pane active" ><br>
+    <div id="menu2" class="container tab-pane active"  role="tabpanel"><br>
       <h3>توضیحات</h3>
       <p class="text-right"><br>
 سرای مزرعه و امکان چت و مسابقه !!!<br>
@@ -399,5 +584,6 @@ $(document).ready(function(){
   </div>
 
 </div>
+
   </body>
 </html>

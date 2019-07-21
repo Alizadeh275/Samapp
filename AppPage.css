@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 .container {
@@ -544,42 +545,6 @@ box-shadow: 0 2px 4px rgba(0,0,0,.4);
 
 
 
-/* make header responsive*/
-@media  screen and (max-width: 770px) {
-
-.navbar {
-  display: none !important;
-}
-
-.content {
-  display: block !important;
-}
-
-.content form:hover{
-    width:200px;
-    cursor: pointer;
-    transform: scale(1, 1);
-}
-}
-
-@media  screen and (max-width: 480px) {
-
-.navbar {
-  display: none;
-}
-
-.content {
-  display: block;
-}
-
-.content form:hover{
-    width:94%;
-    cursor: pointer;
-    transform: scale(1, 1);
-}
-
-
-}
 
 .Modal {
   display: none;
@@ -729,4 +694,89 @@ button a{
 button a:hover{
   color: white;
   text-decoration: none;
+}
+
+
+
+
+
+   #myModal2   a{
+        text-decoration: none;
+        font-family: naz;
+        direction: rtl;
+        color: #DC1AE8;
+
+      }
+   #myModal2 a:hover{
+      color: lime;
+      text-decoration: none;
+    }
+    #myModal2  li {
+        direction: rtl;
+        color: lime;
+      }
+
+
+     #myModal2 h4{
+        position: relative;
+        right: -45px !important;
+     }
+
+
+   #myModal3   a{
+        text-decoration: none;
+        font-family: naz;
+        direction: rtl;
+        color: #DC1AE8;
+
+      }
+   #myModal3 a:hover{
+      color: lime;
+      text-decoration: none;
+    }
+    #myModal3  li {
+        direction: rtl;
+        color: lime;
+      }
+     #myModal3 h4{
+        position: relative;
+        right: -45px !important;
+     }
+
+
+/* make header responsive*/
+@media  screen and (max-width: 770px) {
+
+.navbar {
+  display: none !important;
+}
+
+.content {
+  display: block !important;
+}
+
+.content form:hover{
+    width:200px;
+    cursor: pointer;
+    transform: scale(1, 1);
+}
+}
+
+@media  screen and (max-width: 480px) {
+
+.navbar {
+  display: none;
+}
+
+.content {
+  display: block;
+}
+
+.content form:hover{
+    width:94%;
+    cursor: pointer;
+    transform: scale(1, 1);
+}
+
+
 }
