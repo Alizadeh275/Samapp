@@ -744,6 +744,22 @@ button a:hover{
      }
 
 
+    .comment-info  img {
+        width: 15px;
+        height: 15px;
+        opacity: .6;
+      }
+      .date ,p,.name {
+        direction: rtl;
+        font-family: naz;
+      }
+      .name ,.date {
+        font-size: 15px;
+        padding-top: 7px;
+        color: silver;
+      }
+
+
 /* make header responsive*/
 @media  screen and (max-width: 770px) {
 
