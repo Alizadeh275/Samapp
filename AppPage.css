@@ -758,7 +758,10 @@ button a:hover{
         padding-top: 7px;
         color: silver;
       }
-
+    .user-icon i{
+      font-size: 35px;
+      color: #DC1AE8;
+    }
 
 /* make header responsive*/
 @media  screen and (max-width: 770px) {
@@ -794,5 +797,28 @@ button a:hover{
     transform: scale(1, 1);
 }
 
+    .comment-info  img {
+        width: 12px;
+        height: 12px;
+        opacity: .6;
+      }
+      .date ,p,.name {
+        direction: rtl;
+        font-family: naz;
+      }
+      .name ,.date {
+        font-size: 10px;
+        padding-top: 7px;
+        color: silver;
+      }
+
+    .user-icon i{
+      font-size: 25px;
+      color: #DC1AE8;
+    }
+
+    p{
+      font-size: 12px;
+    }
 
 }
