@@ -749,20 +749,47 @@ button a:hover{
         height: 15px;
         opacity: .6;
       }
-      .date ,p,.name {
+     .comment-info .date ,p,.name {
         direction: rtl;
         font-family: naz;
       }
-      .name ,.date {
+    .comment  .name ,.comment .date  {
         font-size: 15px;
-        padding-top: 7px;
+        padding-top: 4px;
         color: silver;
       }
-    .user-icon i{
+
+     .user-icon {
+     }
+   .comment .user-icon i{
+      font-size: 35px;
+      color: #DC1AE8;
+      border: 1px solid lime;
+      padding: 1px;
+
+    }
+
+  .question .user-icon i{
       font-size: 35px;
       color: #DC1AE8;
     }
 
+    .question .date ,.question p,.name {
+        direction: rtl;
+        font-family: naz;
+      }
+    .question-info .name ,.question-info .date ,.question-info .name span{
+        font-size: 15px;
+        padding-top: 7px;
+        color: silver;
+      }
+      .question  .user-icon {
+            padding: 2px 2px;
+        }
+
+        .reply-box{
+
+        }
 /* make header responsive*/
 @media  screen and (max-width: 770px) {
 
@@ -802,27 +829,49 @@ button a:hover{
         height: 12px;
         opacity: .6;
       }
-      .date ,p,.name {
+   .comment-info   .date ,p,.comment .name {
         direction: rtl;
         font-family: naz;
       }
-      .name ,.date {
+    .comment  .name ,.comment .date {
         font-size: 10px;
         padding-top: 7px;
         color: silver;
       }
 
-    .user-icon i{
+    .comment .user-icon i{
       font-size: 25px;
       color: #DC1AE8;
     }
 
-    p{
+   .comment p{
+      font-size: 12px;
+    }
+
+/*    */
+   .question-info   .date ,p,.comment .name {
+        direction: rtl;
+        font-family: naz;
+      }
+    .question-info  .name ,.question-info .date,.question-info .name span {
+        font-size: 10px;
+        padding-top: 7px;
+        color: silver;
+      }
+
+   .question .user-icon i{
+      font-size: 25px;
+      color: #DC1AE8;
+    }
+
+   .question p{
       font-size: 12px;
     }
 
     .rate {
       margin-top: 2px;
     }
+
+
 
 }
