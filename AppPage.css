@@ -866,6 +866,9 @@ button a:hover{
     .reply-info .name span {
       margin-left: 4px;
     }
+    .question-info .name span {
+      margin-left: 4px;
+    }
    .question .user-icon i{
       font-size: 25px;
       color: #DC1AE8;
