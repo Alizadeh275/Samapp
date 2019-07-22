@@ -837,6 +837,7 @@ button a:hover{
         font-size: 10px;
         padding-top: 7px;
         color: silver;
+        font-weight: bold;
       }
 
     .comment .user-icon i{
@@ -845,7 +846,7 @@ button a:hover{
     }
 
    .comment p{
-      font-size: 12px;
+      font-size: 13px;
     }
 
 /*    */
@@ -854,18 +855,22 @@ button a:hover{
         font-family: naz;
       }
     .question-info  .name ,.question-info .date,.question-info .name span {
-        font-size: 10px;
+        font-size: 11px;
         padding-top: 7px;
         color: silver;
+        font-weight: bold;
       }
 
+    .question-info .name span {
+      margin-left: 4px;
+    }
    .question .user-icon i{
       font-size: 25px;
       color: #DC1AE8;
     }
 
    .question p{
-      font-size: 12px;
+      font-size: 13px;
     }
 
     .rate {
