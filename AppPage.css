@@ -771,6 +771,17 @@ button a:hover{
       padding: 1px;
 
     }
+      .all-comments {
+          color: #DC1AE8;
+          border-bottom: 1px dashed #DC1AE8;
+      }
+
+      .all-comments i{
+      }
+      .all-comments:hover {
+          color: lime;
+          text-decoration: none;
+      }
 
   .question .user-icon i{
       font-size: 35px;
