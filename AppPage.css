@@ -787,9 +787,11 @@ button a:hover{
             padding: 2px 2px;
         }
 
-        .reply-box{
-
-        }
+    .reply-info .name ,.reply-info .date ,.reply-info .name span{
+        font-size: 15px;
+        padding-top: 7px;
+        color: silver;
+      }
 /* make header responsive*/
 @media  screen and (max-width: 770px) {
 
@@ -861,7 +863,7 @@ button a:hover{
         font-weight: bold;
       }
 
-    .question-info .name span {
+    .reply-info .name span {
       margin-left: 4px;
     }
    .question .user-icon i{
@@ -873,6 +875,17 @@ button a:hover{
       font-size: 13px;
     }
 
+
+
+    .reply-box i{
+      font-size: 20px;
+    }
+    .reply-info  .name ,.reply-info .date,.reply-info .name span {
+        font-size: 11px;
+        padding-top: 7px;
+        color: silver;
+        font-weight: bold;
+      }
     .rate {
       margin-top: 2px;
     }
