@@ -34,7 +34,6 @@
   font-family: naz;
   src:url("Vazir-FD.ttf");
 }
-
 	</style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
@@ -177,7 +176,7 @@ $(document).ready(function(){
 
 
 
-<div class="container  mt-4 bg-white" style="position: relative;top:50px;">
+<div class="container  mt-5 bg-white" style="position: relative;top:50px;">
 	<div class="row flex-row-reverse">
     <div class="col-md-2 bg-light p-4 p-md-2">
       <img src="icons/cover_257.png" width="100%" alt="">
@@ -379,7 +378,60 @@ $(document).ready(function(){
       </div>
     </div>
   </div>
+<!--
+-->
 
+
+ <!-- The Modal -->
+  <div class="modal fade " id="myModal4">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header float-right pb-1 pl-0">
+          <button type="button" class="close float-left text-left ml-0" data-dismiss="modal">&times;</button>
+ <h3 class="text-right float-right w-100">نظر جدید</h3>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+<div class="container clearfix">
+  <div id="full-stars-example-two" class="float-right" >
+   <span class="desc float-right text-right pr-2">امتیاز شما:</span>
+
+    <div class="rating-group">
+        <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating3-none" value="0" type="radio">
+        <label aria-label="1 star" class="rating__label" for="rating3-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+        <input class="rating__input" name="rating3" id="rating3-1" value="1" type="radio">
+        <label aria-label="2 stars" class="rating__label" for="rating3-2"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+        <input class="rating__input" name="rating3" id="rating3-2" value="2" type="radio">
+        <label aria-label="3 stars" class="rating__label" for="rating3-3"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+        <input class="rating__input" name="rating3" id="rating3-3" value="3" type="radio">
+        <label aria-label="4 stars" class="rating__label" for="rating3-4"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+        <input class="rating__input" name="rating3" id="rating3-4" value="4" type="radio">
+        <label aria-label="5 stars" class="rating__label" for="rating3-5"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+        <input class="rating__input" name="rating3" id="rating3-5" value="5" type="radio">
+    </div>
+
+</div>
+  <form action="" class="w-100 h-50 mx-auto">
+     <div class="mb-3">
+      <textarea class="form-control" rows="5" id="comment" name="text" placeholder="نظر شما..."></textarea>
+    </div>
+    <button type="submit" class="btn btn-success p-2 w-100">ثبت</button>
+
+  </form>
+
+</div>
+
+        </div>
+
+        <!-- Modal footer -->
+
+
+      </div>
+    </div>
+  </div>
 
 <span class="text-center bg-light" style="direction: ltr;">(<i class="fas fa-user"></i> 45)</span>
 
@@ -434,8 +486,8 @@ $(document).ready(function(){
     </div>
     <div class="col-md-2 bg-light order-3">
       <button class=" mt-4 p-2 w-100" style="border-radius: 5px;outline: none;">دریافت آخرین نسخه</button>
-      <button class="btn-secondary mt-1 p-2 w-100" style="border-radius: 5px;outline: none;">
-        <a href="#versions">نسخه ها قبلی
+      <button class="btn-secondary mt-2 p-2 w-100" style="border-radius: 5px;outline: none;">
+        <a href="#versions">نسخه ها قبلی <i class="fas fa-history" class="p-1"></i>
         </a>
         </button>
 
@@ -467,7 +519,9 @@ $(document).ready(function(){
     <br>
 <hr>
     <div id="home" class="container tab-pane fade" role="tabpanel"><br>
-      <button class="float-left p-2" style="border-radius: 5px;background-color: lime;">نظر جدید <i class="fas fa-plus px-1" style="font-size: 10px;"></i></button>
+      <button style="cursor: pointer;"
+               data-toggle="modal" data-target="#myModal4"
+       class="float-left p-2" style="border-radius: 5px;background-color: lime;">نظر جدید <i class="fas fa-plus px-1" style="font-size: 10px;"></i></button>
       <h3>نظرات</h3>
 <div class="comment container mt-4 clearfix bg-light">
     <div class="user-icon text-right float-right text-right mt-2">
@@ -569,7 +623,7 @@ $(document).ready(function(){
         برنامه خیلی خوبی است
       </p>
   </div>
-  <a href="#" class="all-comments text-left float-left mt-2">نمایش همه نظرات  <i class="fa fa-angle-left"></i></a>
+  <a href="#" class="all-comments text-left float-left mt-2">مشاهده همه نظرات  <i class="fa fa-angle-left"></i></a>
 <!---
 -->
 <div class="questions mt-5 clearfix pt-4">
@@ -651,7 +705,7 @@ $(document).ready(function(){
   </div>
 
 </div>
-  <a href="#" class="all-comments text-left float-left mt-2">نمایش همه پرسش&zwnj;ها
+  <a href="#" class="all-comments text-left float-left mt-2">مشاهده همه پرسش&zwnj;ها
    <i class="fa fa-angle-left"></i></a>
 
     </div>
@@ -761,7 +815,7 @@ $(document).ready(function(){
 
 
   </div>
-
+  <a href="#" class="all-comments text-left float-left mt-2">مشاهده همه نسخه&zwnj;ها <i class="fa fa-angle-left"></i></a>
 </div>
 
   </body>
