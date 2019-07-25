@@ -35,6 +35,11 @@
   src:url("Vazir-FD.ttf");
 }
 
+/*@font-face {
+  font-family: nas;
+  src:url("IranNastaliq.ttf");
+}*/
+
 
 
 	</style>
@@ -405,7 +410,7 @@ $(document).ready(function(){
     <div class="rating-group">
         <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating3-none" value="0" type="radio">
         <label aria-label="1 star" class="rating__label" for="rating3-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
-        <input class="rating__input" name="rating3" id="rating3-1" value="1" type="radio">
+        <input checked class="rating__input" name="rating3" id="rating3-1" value="1" type="radio">
         <label aria-label="2 stars" class="rating__label" for="rating3-2"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
         <input class="rating__input" name="rating3" id="rating3-2" value="2" type="radio">
         <label aria-label="3 stars" class="rating__label" for="rating3-3"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
@@ -454,9 +459,9 @@ $(document).ready(function(){
         <div class="modal-body pt-0">
 <div class="container clearfix">
 
-  <form action="" class="w-100 h-50 mx-auto">
+  <form action="" class="w-100 h-50 mx-auto needs-validation" novalidate>
      <div class="mb-3">
-      <textarea class="form-control" rows="5" id="comment" name="text" placeholder="پرسش شما درمورد مدال"></textarea>
+      <textarea class="form-control" rows="5" id="comment" name="text" placeholder="پرسش شما درمورد مدال" required=""></textarea>
     </div>
     <button type="submit" class="btn btn-success p-2 w-100">ثبت</button>
 
@@ -559,9 +564,9 @@ $(document).ready(function(){
     <br>
 <hr>
     <div id="home" class="container tab-pane fade" role="tabpanel"><br>
-      <button style="cursor: pointer;"
+      <button
                data-toggle="modal" data-target="#myModal4"
-       class="float-left p-2" style="border-radius: 5px;background-color: lime;">نظر جدید <i class="fas fa-plus px-1" style="font-size: 10px;"></i></button>
+       class="float-left p-2" style="cursor: pointer; border-radius: 5px;background-color: lime;">نظر جدید <i class="fas fa-plus px-1" style="font-size: 10px;"></i></button>
       <h3>نظرات</h3>
 <div class="comment container mt-4 clearfix bg-light">
     <div class="user-icon text-right float-right text-right mt-2">
@@ -863,7 +868,7 @@ $(document).ready(function(){
   <a href="#" class="all-comments text-left float-left mt-2">مشاهده همه نسخه&zwnj;ها <i class="fa fa-angle-left"></i></a>
 </div>
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">
+<button onclick="topFunction()" id="myBtn" title="بالای صفحه">
   <i class="far fa-caret-square-up" ></i></button>
 <script>
 // When the user scrolls down 20px from the top of the document, show the button
@@ -885,5 +890,28 @@ function topFunction() {
 }
 
 </script>
+
+
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+
   </body>
 </html>

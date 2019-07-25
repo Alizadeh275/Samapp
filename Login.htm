@@ -41,18 +41,33 @@
   <div class="form">
     <form class="register-form">
 
-      <input id="ph1" type="text" required="on" placeholder="نام"/>
-      <input id="ph2" type="text" required="on" placeholder="نام خانوادگی"/>
-      <input type="text" required="on" placeholder="ایمیل" autocomplete="on" />
-      <input type="password" required="on" placeholder="رمز عبور"/>
-      <input type="password" required="on" placeholder="تکرار رمز عبور"/>
+      <input id="ph1" type="text" required="on" placeholder="نام" oninvalid="this.setCustomValidity('لطفا این فیلد را پر کنید.')"
+    oninput="this.setCustomValidity('')"  />
+
+      <input id="ph2" type="text" required="on" placeholder="نام خانوادگی" oninvalid="this.setCustomValidity('لطفا این فیلد را پر کنید.')"
+    oninput="this.setCustomValidity('')"  />
+
+      <input type="text" required="on" placeholder="ایمیل" autocomplete="on" oninvalid="this.setCustomValidity('لطفا این فیلد را پر کنید.')"
+    oninput="this.setCustomValidity('')"   />
+
+      <input type="password" required="on" placeholder="رمز عبور" oninvalid="this.setCustomValidity('لطفا این فیلد را پر کنید.')"
+    oninput="this.setCustomValidity('')"  />
+
+      <input type="password" required="on" placeholder="تکرار رمز عبور" oninvalid="this.setCustomValidity('لطفا این فیلد را پر کنید.')"
+    oninput="this.setCustomValidity('')"  />
+
       <button>ثبت نام</button>
       <p class="message">حساب کاربری دارید؟ <a href="#">وارد شوید</a></p>
     </form>
     <form class="login-form">
 
-      <input type="text" placeholder="ایمیل" autocomplete="on" />
-      <input type="password" placeholder="رمز عبور" autocomplete="on" />
+      <input type="text" placeholder="ایمیل" autocomplete="on" required=""
+          oninvalid="this.setCustomValidity('نام کاربری خود را وارد کنید.')"
+    oninput="this.setCustomValidity('')" />
+
+      <input type="password" placeholder="رمز عبور" autocomplete="on" required=""
+          oninvalid="this.setCustomValidity('رمز عبور را وارد کنید')"
+    oninput="this.setCustomValidity('')"  />
       <button>ورود</button>
       <p class="message">عضو نیستید؟ <a href="#">ثبت نام</a></p>
       <p class="recovery"><a href="#">رمز عبورتان را فراموش کرده اید؟ </a></p>
