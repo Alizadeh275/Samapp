@@ -1,0 +1,126 @@
+
+.progress-bar {
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+/*@font-face {
+  font-family: nas;
+  src:url("IranNastaliq.ttf");
+}*/
+
+/* make header responsive*/
+@media  screen and (max-width: 786px) {
+
+.navbar {
+  display: none !important;
+}
+
+.content {
+  display: block !important;
+}
+
+.content form:hover{
+    width:200px;
+    cursor: pointer;
+    transform: scale(1, 1);
+}
+
+#myBtn i {
+}
+
+
+#myBtn  {
+  right: 25px;
+  bottom: 5px;
+}
+
+}
+
+@media  screen and (max-width: 480px) {
+
+.navbar {
+  display: none;
+}
+
+.content {
+  display: block;
+}
+
+.content form:hover{
+    width:94%;
+    cursor: pointer;
+    transform: scale(1, 1);
+} 
+
+    .comment-info  img {
+        width: 12px;
+        height: 12px;
+        opacity: .6;
+      }
+   .comment-info   .date ,p,.comment .name {
+        direction: rtl;
+        font-family: naz;
+      }
+    .comment  .name ,.comment .date {
+        font-size: 10px;
+        padding-top: 7px;
+        color: silver;
+        font-weight: bold;
+      }
+    
+    .comment .user-icon i{
+      font-size: 25px;
+      color: #DC1AE8;
+    }
+
+   .comment p{
+      font-size: 13px;
+    }
+
+/*    */
+   .question-info   .date ,p,.comment .name {
+        direction: rtl;
+        font-family: naz;
+      }
+    .question-info  .name ,.question-info .date,.question-info .name span {
+        font-size: 11px;
+        padding-top: 7px;
+        color: silver;
+        font-weight: bold;
+      }
+
+    .reply-info .name span {
+      margin-left: 4px;
+    }
+    .question-info .name span {
+      margin-left: 4px;
+    }
+   .question .user-icon i{
+      font-size: 25px;
+      color: #DC1AE8;
+    }
+
+   .question p{
+      font-size: 13px;
+    }
+
+
+
+    .reply-box i{
+      font-size: 20px;
+    }
+    .reply-info  .name ,.reply-info .date,.reply-info .name span {
+        font-size: 11px;
+        padding-top: 7px;
+        color: silver;
+        font-weight: bold;
+      }
+    .rate {
+      margin-top: 2px;
+    }
+#myBtn:hover {
+  color: #ccc;
+}
+
+
+}

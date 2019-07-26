@@ -558,6 +558,12 @@ box-shadow: 0 2px 4px rgba(0,0,0,.4);
   background-color:rgba(0,0,0,.7);
   overflow: auto;
 }
+
+.progress-bar {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
 /*    */
   .nav a {
     direction: rtl;
@@ -763,6 +769,15 @@ button a:hover{
         color: silver;
       }
 
+.vs {
+  font-size: 15px;
+  color: silver;
+  font-family: naz;
+  padding-bottom: 4px;
+  direction: rtl;
+}
+
+
      .user-icon {
      }
    .comment .user-icon i{
@@ -891,7 +906,7 @@ button a:hover{
   color: lime;
 }
 /* make header responsive*/
-@media  screen and (max-width: 770px) {
+@media  screen and (max-width: 787px) {
 
 .navbar {
   display: none !important;
@@ -950,6 +965,10 @@ button a:hover{
         font-weight: bold;
       }
 
+.vs {
+  font-size: 10px;
+}
+
     .comment .user-icon i{
       font-size: 25px;
       color: #DC1AE8;
@@ -1000,7 +1019,9 @@ button a:hover{
     .rate {
       margin-top: 2px;
     }
-
+#myBtn:hover {
+  color: #ccc;
+}
 
 
 }

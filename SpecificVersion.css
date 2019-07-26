@@ -1,0 +1,22 @@
+
+.vs {
+  font-size: 15px;
+  color: silver;
+}
+
+.mv {
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  color: lime;
+  display: block;
+  border: 1px solid lime;
+}
+
+.mv a{
+  color: lime;
+}
+.mv:hover {
+  background-color: lime;
+  color: white;
+}
