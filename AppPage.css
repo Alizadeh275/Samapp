@@ -909,6 +909,79 @@ button a:hover{
 #myBtn:hover {
   color: lime;
 }
+
+
+/* gallary
+
+*/
+.gallary {
+
+}
+
+.slider-gallery {
+  display: flex;
+    box-sizing: border-box;
+    height: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+    margin: 50px auto;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+
+}
+
+
+.slider-gallery .item.link {
+    display: inline-block;
+    height: 100%;
+    margin: 0 5px 0 5px;
+    vertical-align: top;
+    cursor: pointer;
+    width: auto;
+}
+
+.slider-gallery .item.link img {
+    min-height: 300px;
+    max-height: 300px;
+    border: 1px solid #ccc;
+}
+
+
+.gallary ::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+    padding-top: 40px;
+  background-color: #ddd;
+}
+
+.gallary ::-webkit-scrollbar-track{
+    border-radius: 4px;
+
+}
+.gallary ::-webkit-scrollbar-thumb{
+    border-radius:4px;
+    height: 30px;
+    width: 8px;
+    background: #aaa;
+
+}
+
+.gallary ::-webkit-scrollbar-track-piece {
+    height: 30px;
+    width: 30px;
+}
+
+/* Handle on hover */
+.gallary ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+
 /* make header responsive*/
 @media  screen and (max-width: 787px) {
 
@@ -1036,6 +1109,13 @@ button a:hover{
 .nav-pills {
   position: relative;
   top: 5px;
+}
+
+
+
+.slider-gallery .item.link img {
+    max-height: 250px;
+    min-height: 250px;
 }
 
 }
