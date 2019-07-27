@@ -581,6 +581,10 @@ box-shadow: 0 2px 4px rgba(0,0,0,.4);
 
 /* not active */
 
+.nav-pills {
+  position: relative;
+}
+
 .nav-pills .nav-item  {
 border-right: 1px solid lime;
 border-top: 1px solid lime;
@@ -1023,5 +1027,13 @@ button a:hover{
   color: #ccc;
 }
 
+.nav-pills .nav-link{
+  font-size: 12px;
+}
+
+.nav-pills {
+  position: relative;
+  top: 5px;
+}
 
 }
