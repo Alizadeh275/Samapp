@@ -1029,6 +1029,7 @@ button a:hover{
 
 .nav-pills .nav-link{
   font-size: 13px;
+  font-weight: bold;
 }
 
 .nav-pills {
