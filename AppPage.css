@@ -1,1040 +1,892 @@
-html {
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-.container {
-  margin: 10px auto;
-}
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<!--fontawesome -->
 
-h1 {
-	font-family: naz;
-  direction: rtl;
-  margin-top: 18px;
-  margin-bottom: 9px;
-    color: #DC1AE8;
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-}
+<link rel="stylesheet" href="AppPage.css">
 
-a {
-  background-color: transparent;
-  text-align: right;
-  direction: rtl;
-  color: lime;
-}
+<!---
+-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-span {
-  color: #91b42f;
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="SpecificVersion.css">
+    <title></title>
+
+	<style type="text/css">
+@font-face {
   font-family: naz;
-  direction: rtl;
-}
-.dev {
-  direction: rtl;
-  text-align: right: ;
+  src:url("Vazir-FD.ttf");
 }
 
-.Rate {
-  width: 100px;
-  margin: 0 auto;
-  margin-top: -5px;
-  direction: ltr;
-
-}
-
-.Rate img {
-  width: 16px;
-  padding: 0;
-
-}
-
-button {
-  font-family: naz;
-  background-color: lime;
-  outline: none;
-  border: none;
-  color: white;
-
-}
-
-.app-info span {
+/*@font-face {
+  font-family: nas;
+  src:url("IranNastaliq.ttf");
+}*/
+	</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
 
 
-}
+  $(".content form").click(function(){
 
-body{
-  background-color: #f1f1f1;
-}
+    $(".Modal").css("display","block");
 
+  });
 
-* {
-  box-sizing: border-box;
-}
+  $(".content form").mouseleave(function(){
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: naz;
-  background-color: #f1f1f1;
-}
+    $(".Modal").css("display","none");
+
+  });
 
 
-.navbar {
-  position: fixed;
-  top: 0 !important;
-  display: block !important;
-  overflow: hidden;
-  background-color: lime;
-  font-family: Arial, Helvetica, sans-serif;
-  direction: rtl;
-  float: right;
-  width: 100%;
-  padding-bottom: 0;
-  z-index: 1;
-box-shadow: 0 2px 4px rgba(0,0,0,.2);
-padding-top: 0 !important;
-padding-bottom: 0 !important;
-margin-bottom: 100px !important;
-}
+});
+</script>
+  </head>
+  <body>
 
-.navbar a {
-  float: right !important;
-  font-size: 18px;
-  color: white;
-  text-align: left !important;
-  padding: 14px 16px;
-  text-decoration: none;
-  direction: rtl !important;
-   font-family: naz;
+    <div class="content fixed-tops">
+      <nav>
+        <input type="checkbox" id="hamburger1" />
+        <label for="hamburger1"></label>
+        <h3>سَماپ</h3>
+<form action="">
+  <input type="search" placeholder="جست و جو ...">
+  <i class="fa fa-search"></i>
+</form>
+        <ul class="nav-links">
+          <li><a href="#" class="" style="cursor: pointer;"
+               data-toggle="modal" data-target="#myModal2">برنامه ها</a></li>
+          <li><a href="#" class="" style="cursor: pointer;"
+               data-toggle="modal" data-target="#myModal3">بازی ها</a></li>
+          <li><a href="Login.htm">ورود / عضویت</a></li>
+        </ul>
+      </nav>
+<div class="Modal"></div>
+
+    </div>
+
+<div class="navbar">
+  <a class="icon" href="#home">سَماپ</a>
+  <div class="dropdown">
+    <button class="dropbtn">برنامه ها
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+
+      <div class="row">
+         <div class="column">
+          <a href="#">آب و هوا</a>
+          <a href="#">آشپزی و رستوران</a>
+          <a href="#">آموزش</a>
+          <a href="#">ابزارها</a>
+        </div>
+
+        <div class="column">
+          <a href="#">امور مالی</a>
+          <a href="#">پیام رسان ها</a>
+          <a href="#">خبرها و نشریات</a>
+          <a href="#">خرید </a>
+
+        </div>
+        <div class="column">
+          <a href="#">دارو و درمان</a>
+          <a href="#">رفت و آمد</a>
+          <a href="#">سبک زندگی</a>
+          <a href="#">سرگرمی</a>
+
+        </div>
+        <div class="column">
+          <a href="#">سیر و سفر</a>
+          <a href="#">شبکه های اجتماعی</a>
+          <a href="#">شخصی سازی</a>
+          <a href="#">عکاسی</a>
+
+        </div>
+        <div class="column">
+          <a href="#">مذهبی</a>
+          <a href="#">موسیقی و صدا</a>
+          <a href="#">ورزشی</a>
+          <a href="#">ویدیو و رسانه</a>
+           </div>
+      </div>
+    </div>
+  </div>
+<!---
+-->
+  <div class="dropdown">
+    <button class="dropbtn">بازی ها
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+
+      <div class="row">
+        <div class="column">
+          <a href="#">آموزشی</a>
+          <a href="#">استراتژی </a>
+          <a href="#">اکشن</a>
+          <a href="#">امتیازی</a>
+        </div>
+        <div class="column">
+          <a href="#">خانوادگی</a>
+          <a href="#">رانندگی</a>
+          <a href="#">شبیه سازی</a>
+          <a href="#">کلمات و دانستنی ها</a>
+        </div>
+        <div class="column">
+          <a href="#">معمایی</a>
+          <a href="#">ورزشی</a>
+          <a href="#">ماجرایی</a>
+          <a href="#">تفننی</a>
+
+      </div>
+
+      </div>
+    </div>
+  </div>
+  <!---
+  -->
+
+<form action="">
+  <input type="search" placeholder="جست و جو...">
+  <i class="fa fa-search"></i>
+</form>
 
 
-}
 
-.dropdown {
-  float: right !important ;
-  overflow: hidden !important;
-  display: inline-block !important;
-  padding-bottom: 0;
+<div class="profile">
+  <a href="Login.htm"  target="blank">ورود / عضویت</a>
 
-}
+  <i class="fas fa-user"></i>
+</div>
+</div>
 
-.dropdown .dropbtn {
-  font-size: 18px;
-  border: none;
-  outline: none !important;
-  color: white;
-  padding: 16px 18px !important;
-  background-color: inherit;
-  margin: 0 !important;
-  font-family: naz;
-  font-weight: bold;
+
+
+<div class="container pb-2  mt-5 bg-light" style="position: relative;top:50px;">
+	<div class="row flex-row-reverse">
+    <div class="col-md-2 bg-light p-4 p-md-2">
+      <img src="icons/cover_257.png" width="100%" alt="">
+    </div>
+    <div class="col-md-8 bg-light order-2">
+      <div class="row flex-row-reverse">
+        <div class="col-md-12 bg-light">
+          <div class="app-name text-center">
+          <h1 class="text-center float-md-right">مدال
+            <sup class="small p-1 bg-secondary  text-white" style="font-size: 12px;
+            border-radius: 5px;">نسخه 2.1</sup></h1>
+
+          </div>
+        </div>
+
+        <div class="col-md-4 text-md-right text-center bg-light float-right flex-row-reverse">
+
+          <div class="dev">
+            <a href="#"> <span>ایران اپس</span> </a>
+          </div>
+          <div class="rating bg-light clearfix">
+
+              <div class="Rate float-lg-right float-none pt-1" style="cursor: pointer;"
+               data-toggle="modal" data-target="#myModal">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/empty-star2.png" alt="">
+    <img src="stars/empty-star2.png" alt="">
+  </div>
+
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content text-right">
+
+        <!-- Modal Header -->
+        <div class="modal-header float-right pb-1 pl-0">
+          <button type="button" class="close float-left text-left ml-0" data-dismiss="modal">&times;</button>
+ <h3 class="text-right float-right w-100">امتیازات</h3>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+  <!-- Blue -->
+  <h3 class="text-center">4.7</h3>
+ <br>
+
+    <div class="float-left mr-2">
+    <img src="stars/full-star.png" class="mb-1 ml-0" width="20px;" alt="">
+  <span class="mb-1">5</span>
+    </div>
+   <div class="progress" style="height: 22px;">
+   <div class="progress-bar" style="width:80%;background-color: green;">245</div>
+  </div><br>
+  <!-- Green -->
+    <div class="float-left mr-2">
+    <img src="stars/full-star.png" class="mb-1 ml-0" width="20px;" alt="">
+  <span class="mb-1">4</span>
+    </div>
+  <div class="progress" style="height: 22px;">
+    <div class="progress-bar" style="width:50%;background-color: lime;">56</div>
+  </div><br>
+
+  <!-- Turquoise -->
+      <div class="float-left mr-2">
+    <img src="stars/full-star.png" class="mb-1 ml-0" width="20px;" alt="">
+  <span class="mb-1">3</span>
+    </div>
+
+  <div class="progress" style="height: 22px;">
+    <div class="progress-bar" style="width:30%;background-color: yellow;">45</div>
+  </div><br>
+
+  <!-- Orange -->
+    <div class="float-left mr-2">
+    <img src="stars/full-star.png" class="mb-1 ml-0" width="20px;" alt="">
+  <span class="mb-1">2</span>
+    </div>
+  <div class="progress" style="height: 22px;">
+     <div class="progress-bar" style="width:40%;background-color: orange;">5</div>
+  </div><br>
+
+  <!-- Red -->
+      <div class="float-left mr-2">
+    <img src="stars/full-star.png" class="mb-1 ml-0" width="20px;" alt="">
+  <span class="mb-1">1</span>
+    </div>
+  <div class="progress" style="height: 22px;">
+    <div class="progress-bar" style="width:10%;background-color: red;">5</div>
+  </div><br>
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+<!---
+-->
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal2">
+    <div class="modal-dialog">
+      <div class="modal-content text-right">
+
+        <!-- Modal Header -->
+        <div class="modal-header float-right pb-1 pl-0">
+          <button type="button" class="close float-left text-left ml-0" data-dismiss="modal">&times;</button>
+ <h3 class="text-right float-right w-100">برنامه&zwnj;ها</h3>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+<div class="row float-right mr-5">
+  <div class="float-right">
+  <ul>
+  <li><a href="">آب و هوا</a></li>
+  <li><a href="">آشپزی و رستوران</a></li>
+  <li><a href="">آموزش</a></li>
+  <li><a href="">ابزارها</a></li>
+  <li><a href="">امورمالی</a></li>
+  <li><a href="">پیام رسان ها</a></li>
+  <li><a href="">خبرها و نشریات</a></li>
+  <li><a href="">خرید</a></li>
+  <li><a href="">دارو و درمان</a></li>
+  <li><a href="">رفت و آمد</a></li>
+  <li><a href="">سبک زندگی</a></li>
+  <li><a href="">سرگرمی</a></li>
+  <li><a href="">سیر و سفر</a></li>
+  <li><a href="">شبکه ها اجتماعی</a></li>
+  <li><a href="">شخصی سازی</a></li>
+  <li><a href="">عکاسی</a></li>
+  <li><a href="">مذهبی</a></li>
+  <li><a href="">موسیقی و صدا</a></li>
+  <li><a href="">ورزشی</a></li>
+  <li><a href="">ویدئو و رسانه</a></li>
+</ul>
+
+  </div>
+</div>
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+ <!-- The Modal -->
+  <div class="modal fade" id="myModal3">
+    <div class="modal-dialog">
+      <div class="modal-content text-right">
+
+        <!-- Modal Header -->
+       <div class="modal-header float-right pb-1 pl-0">
+          <button type="button" class="close float-left text-left ml-0" data-dismiss="modal">&times;</button>
+ <h3 class="text-right float-right w-100">بازی&zwnj;ها</h3>
+        </div>
+
+
+        <!-- Modal body -->
+        <div class="modal-body">
+<div class="row float-right mr-5">
+  <div class="float-right text-right">
+<ul>
+  <li><a href="">آموزشی</a></li>
+  <li><a href="">استراتژی</a></li>
+  <li><a href="">اکشن</a></li>
+  <li><a href="">امتیازی</a></li>
+  <li><a href="">خانوادگی</a></li>
+  <li><a href="">رانندگی</a></li>
+  <li><a href="">شبیه سازی</a></li>
+  <li><a href="">کلمات و دانستنی ها</a></li>
+  <li><a href="">معمایی</a></li>
+  <li><a href="">ورزشی</a></li>
+  <li><a href="">ماجرایی</a></li>
+  <li><a href="">تفننی</a></li>
+</ul>
+  </div>
+</div>
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">بستن</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<!--
+-->
+
+
+ <!-- The Modal -->
+  <div class="modal fade " id="myModal4">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header float-right pb-1 pl-0">
+          <button type="button" class="close float-left text-left ml-0" data-dismiss="modal">&times;</button>
+ <h3 class="text-right float-right w-100">نظر جدید</h3>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+<div class="container clearfix">
+  <div id="full-stars-example-two" class="float-right" >
+   <span class="desc float-right text-right pr-2">امتیاز شما:</span>
+
+    <div class="rating-group">
+        <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating3-none" value="0" type="radio">
+        <label aria-label="1 star" class="rating__label" for="rating3-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+        <input checked class="rating__input" name="rating3" id="rating3-1" value="1" type="radio">
+        <label aria-label="2 stars" class="rating__label" for="rating3-2"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+        <input class="rating__input" name="rating3" id="rating3-2" value="2" type="radio">
+        <label aria-label="3 stars" class="rating__label" for="rating3-3"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+        <input class="rating__input" name="rating3" id="rating3-3" value="3" type="radio">
+        <label aria-label="4 stars" class="rating__label" for="rating3-4"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+        <input class="rating__input" name="rating3" id="rating3-4" value="4" type="radio">
+        <label aria-label="5 stars" class="rating__label" for="rating3-5"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+        <input class="rating__input" name="rating3" id="rating3-5" value="5" type="radio">
+    </div>
+
+</div>
+  <form action="" class="w-100 h-50 mx-auto">
+     <div class="mb-3">
+      <textarea class="form-control" rows="5" id="comment" name="text" placeholder="نظر شما برای مدال"></textarea>
+    </div>
+    <button type="submit" class="btn btn-success p-2 w-100">ثبت</button>
+
+  </form>
+
+</div>
+
+        </div>
+
+        <!-- Modal footer -->
+
+
+      </div>
+    </div>
+  </div>
+
+
+<!---
+-->
+ <!-- The Modal -->
+  <div class="modal fade " id="myModal5">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header float-right pb-1 pl-0">
+          <button type="button" class="close float-left text-left ml-0" data-dismiss="modal">&times;</button>
+ <h3 class="text-right float-right w-100">پرسش جدید</h3>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body pt-0">
+<div class="container clearfix">
+
+  <form action="" class="w-100 h-50 mx-auto needs-validation" novalidate>
+     <div class="mb-3">
+      <textarea class="form-control" rows="5" id="comment" name="text" placeholder="پرسش شما درمورد مدال" required=""></textarea>
+    </div>
+    <button type="submit" class="btn btn-success p-2 w-100">ثبت</button>
+
+  </form>
+
+</div>
+
+        </div>
+
+        <!-- Modal footer -->
+
+
+      </div>
+    </div>
+  </div>
+
+<span class="text-center bg-light" style="direction: ltr;">(<i class="fas fa-user"></i> 45)</span>
+
+          </div>
+
+
+        </div>
+        <div class="col-md-7 col-lg-4 bg-light app-info">
+          <div class="bg-light text-right" style="direction: rtl;">
+            <span style="direction: rtl;">دسته:</span>
+            <span style="float: left !important;">
+              <a href="">
+                <span>امتیازی</span>
+              </a>
+            </span>
+
+          </div>
+
+          <div class="bg-light text-right" style="direction: rtl;">
+            <span>دانلود:</span>
+            <span>
+              <span style="float: left !important;">+1,000</span>
+            </span>
+          </div>
+
+          <div class="bg-light text-right" style="direction: rtl;">
+            <span>حجم:</span>
+            <span>
+              <span style="float: left !important;">40/4 مگابایت</span>
+            </span>
+          </div>
+
+          <div class="bg-light text-right" style="direction: rtl;">
+            <span>نسخه:</span>
+            <span>
+              <span style="float: left !important;">2.1.1.0</span>
+            </span>
+          </div>
+
+          <div class="bg-light text-right" style="direction: rtl;">
+            <span>اندروید موردنیاز:</span>
+            <span>
+              <span style="float: left !important;">4.1 و 4.2</span>
+            </span>
+          </div>
+
+        </div>
+        <div class="col-md-1 col-lg-4 bg-light">
+        </div>
+
+      </div>
+    </div>
+    <div class="col-md-2  bg-light order-3">
+      <button class=" mt-4 p-2 w-100" style="border-radius: 5px;outline: none;">دریافت نسخه
+        <span class="text-white mr-1">2.1.1.0</span>
+      </button>
+
+      <button class="mv mt-2 p-0 w-100 text-center float-right">
+        <a href="AppPage.htm" class="p-1">
+        نسخه اصلی<i class="fa fa-angle-left pr-2" style="position: relative;
+        top: 2px;font-size: 18px;"></i>
+        </a>
+        </button>
+
+</div>
+	</div>
+</div>
+
+
+<br>
+
+<div class="container">
+  <br>
+<br>
+  <!-- Nav pills -->
+  <ul class="nav nav-pills float-right text-right clearfix" role="tablist">
+
+    <li class="nav-item pill-1 float-right">
+      <a class="nav-link px-2  px-sm-3 " data-toggle="pill" href="#qus">پرسش&zwnj;ها</a>
+    </li>
+    <li class="nav-item pill-2 float-right">
+      <a class="nav-link px-2  px-sm-3 " data-toggle="pill" href="#home">نظرات</a>
+    </li>
+    <li class="nav-item pill-3 float-right">
+      <a class="nav-link px-2  px-sm-3" data-toggle="pill" href="#menu1">دسترسی&zwnj;ها</a>
+    </li>
+    <li class="nav-item pill-4 float-right">
+      <a class="nav-link px-2  px-sm-3 active" data-toggle="pill" href="#menu2">درباره این نسخه</a>
+    </li>
+  </ul>
+  </ul>
+  <!-- Tab panes -->
+  <div class="tab-content text-right clearfix" >
+    <br>
+<hr>
+
+<div id="qus" class="container tab-pane fade" role="tabpanel">
+<div class="questions mt-2 clearfix pt-4">
+  <button class="float-left p-2"
+               data-toggle="modal" data-target="#myModal5"
+   style="border-radius: 5px;background-color: lime;cursor: pointer;">پرسش جدید <i class="fas fa-plus px-1" style="font-size: 10px;"></i></button>
+      <h3>پرسش&zwnj;ها<sup class="small" style="font-size: 15px;">  (نسخه 2.1.1.0)</sup></h3>
+
+  <div class="question container mt-4 clearfix bg-light">
+    <div class="user-icon text-right float-right text-right mt-2">
+        <i class="fas fa-question bg-light"></i>
+      </div>
+    <div class="question-box">
+      <div class="question-info float-right mt-2">
+        <div class="name float-right bg-light ml-2 mr-2"><span>پرسش گر:</span>
+                سجاد</div>
+        <span class="date float-right ml-2 text- bg-light">98/4/30</span>
+      </div>
+
+    </div>
+    <br>
+      <p class="question-text w-100 float-right text-right mt-1 pr-5">
+        این برنامه چجوری کار می کند؟
+      </p>
+        <div class="reply container mt-5 clearfix bg-light">
+        <div class="user-icon text-right float-right text-right mt-2">
+                <i class="fas fa-reply bg-light"></i>
+            </div>
+        <div class="reply-box">
+            <div class="reply-info float-right mt-2">
+                <div class="name float-right bg-light ml-2 mr-2"><span>پاسخ از:  </span>
+                علیرضا</div>
+                <span class="date float-right ml-2 text- bg-light">98/4/30</span>
+            </div>
+
+        </div>
+        <br>
+            <p class="question-text w-100 float-right text-right mt-1 pr-5">
+                این برنامه به آسانی کار می کند.
+            </p>
+    </div>
+      <div>
+        <span class="vs float-left">پرسش روی نسخه 1.1</span>
+      </div>
+  </div>
+
+
+  <div class="question container mt-4 clearfix bg-light">
+    <div class="user-icon text-right float-right text-right mt-2">
+        <i class="fas fa-question bg-light"></i>
+      </div>
+    <div class="question-box">
+      <div class="question-info float-right mt-2">
+        <div class="name float-right bg-light ml-2 mr-2"><span>پرسش گر:  </span>
+                رامین</div>
+        <span class="date float-right ml-2 text- bg-light">98/4/30</span>
+      </div>
+
+    </div>
+    <br>
+      <p class="question-text w-100 float-right text-right mt-1 pr-5">
+        کی بروزرسانی می شود؟
+      </p>
+      <div>
+        <span class="vs float-left">پرسش روی نسخه 3.0</span>
+      </div>
+  </div>
+
+
+  <div class="question container mt-4 clearfix bg-light">
+    <div class="user-icon text-right float-right text-right mt-2">
+        <i class="fas fa-question bg-light"></i>
+      </div>
+    <div class="question-box">
+      <div class="question-info float-right mt-2">
+        <div class="name float-right bg-light ml-2 mr-2"><span>پرسش گر:  </span>
+                محمد حسن</div>
+        <span class="date float-right ml-2 text- bg-light">98/4/30</span>
+      </div>
+
+    </div>
+    <br>
+      <p class="question-text w-100 float-right text-right mt-1 pr-5">
+        خرید درون برنامه ایش انجام نمی شود؟
+      </p>
+  </div>
+
+</div>
+  <a href="#" class="all-comments text-left float-left mt-2">مشاهده همه پرسش&zwnj;ها
+   <i class="fa fa-angle-left"></i></a>
+    </div>
+
+
+    <div id="home" class="container tab-pane fade" role="tabpanel"><br>
+      <button
+               data-toggle="modal" data-target="#myModal4"
+       class="float-left p-2" style="cursor: pointer; border-radius: 5px;background-color: lime;">نظر جدید <i class="fas fa-plus px-1" style="font-size: 10px;"></i></button>
+      <h3>نظرات <sup class="small" style="font-size: 15px;">  (نسخه 2.1.1.0)</sup></h3>
+<div class="comment container mt-4 clearfix bg-light">
+    <div class="user-icon text-right float-right text-right mt-2">
+        <i class="fas fa-user bg-light"></i>
+      </div>
+    <div class="comment-box">
+      <div class="comment-info float-right mt-2">
+        <div class="name float-right bg-light ml-2 mr-2">محمد حسن</div>
+        <div class="rate float-right ml-3 p-0 bg-light">
+
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/empty-star2.png" alt="">
+    <img src="stars/empty-star2.png" alt="">
+        </div>
+        <span class="date float-right ml-2 text- bg-light">98/4/30</span>
+      </div>
+
+    </div>
+    <br>
+      <p class="comment-text w-100 float-right text-right mt-1 pr-5">
+        برنامه خیلی خوبی است
+      </p>
+  </div>
+
+<div class="comment container mt-4 clearfix bg-light">
+    <div class="user-icon text-right float-right text-right mt-2">
+        <i class="fas fa-user bg-light" ></i>
+      </div>
+    <div class="comment-box">
+      <div class="comment-info float-right mt-2">
+        <div class="name float-right bg-light ml-2 mr-2">محمد</div>
+        <div class="rate float-right ml-3 p-0 bg-light">
+
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/empty-star2.png" alt="">
+    <img src="stars/empty-star2.png" alt="">
+        </div>
+        <span class="date float-right ml-2 text- bg-light">98/4/30</span>
+      </div>
+
+    </div>
+    <br>
+      <p class="comment-text w-100 float-right text-right mt-1 pr-5">
+        برنامه خیلی خوبی است برنامه خیلی خوبی است برنامه خیلی خوبی است
+      </p>
+  </div>
+
+<div class="comment container mt-4 clearfix bg-light">
+    <div class="user-icon text-right float-right text-right mt-2">
+        <i class="fas fa-user bg-light" ></i>
+      </div>
+    <div class="comment-box">
+      <div class="comment-info float-right mt-2">
+        <div class="name float-right bg-light ml-2 mr-2">حسن</div>
+        <div class="rate float-right ml-3 p-0 bg-light">
+
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/empty-star2.png" alt="">
+    <img src="stars/empty-star2.png" alt="">
+        </div>
+        <span class="date float-right ml-2 text- bg-light">98/4/30</span>
+      </div>
+
+    </div>
+    <br>
+      <p class="comment-text w-100 float-right text-right mt-1 pr-5">
+        برنامه خیلی خوبی
+      </p>
+  </div>
+
+<div class="comment container mt-4 clearfix bg-light">
+    <div class="user-icon text-right float-right text-right mt-2">
+        <i class="fas fa-user bg-light" ></i>
+      </div>
+    <div class="comment-box">
+      <div class="comment-info float-right mt-2">
+        <div class="name float-right bg-light ml-2 mr-2">Iman</div>
+        <div class="rate float-right ml-3 p-0 bg-light">
+
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/empty-star2.png" alt="">
+    <img src="stars/empty-star2.png" alt="">
+        </div>
+        <span class="date float-right ml-2 text- bg-light">98/4/30</span>
+      </div>
+
+    </div>
+    <br>
+      <p class="comment-text w-100 float-right text-right mt-1 pr-5">
+        برنامه خیلی خوبی است برنامه خیلی خوبی است برنامه خیلی خوبی است
+        برنامه خیلی خوبی است
+      </p>
+  </div>
+  <a href="#" class="all-comments text-left float-left mt-2">مشاهده همه نظرات  <i class="fa fa-angle-left"></i></a>
+<!---
+-->
+
+
+    </div>
+    <div id="menu1" class="container tab-pane fade" role="tabpanel"><br>
+      <h3>دسترسی ها</h3>
+      <br>
+      <ul class="datasheet w-100  float-right">
+        <li class="">به برنامه اجازه میدهد تا از امکان پرداخت درون برنامه ای ایران اپس استفاده کند</li>
+        <li class="">باز کردن سوکت های شبکه</li>
+        <li class="">اسفاده از مدیریت انرژی و WakeLocks جهت بیدار نگه داشتن پردازشگر و جلوگیری از کم نور شدن صفحه نمایشگر</li>
+        <li class="">خواندن اطلاعات موجود در درایوهای سیار</li>
+        <li class="">نوشتن اطلاعات در درایوهای سیار</li>
+        <li class="">ضبط صدا</li>
+        <li class="">دسترسی به اطلاعات مربوط به شبکه ها را می دهد.</li>
+        <li class="">com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE</li>
+        <li class="">com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE</li>
+     </ul>
+     <!-- <table class="datasheet float-right text-right">
+
+<tbody class="text-right"><tr>
+                  <td class="datasheet-features-type">به برنامه اجازه میدهد تا از امکان پرداخت درون برنامه ای ایران اپس استفاده کند</td>
+              </tr>
+                                                                                    <tr>
+                                                <td class="datasheet-features-type">باز کردن سوکت های شبکه</td>
+              </tr>
+                                                                                    <tr>
+                                                <td class="datasheet-features-type">تاسفاده از مدیریت انرژی و WakeLocks جهت بیدار نگه داشتن پردازشگر و جلوگیری از کم نور شدن صفحه نمایشگر</td>
+               </tr>
+                                                                                    <tr>
+                                                <td class="datasheet-features-type">خواندن اطلاعات موجود در درایوهای سیار</td>
+               </tr>
+                                                                                    <tr>
+                                                <td class="datasheet-features-type">نوشتن اطلاعات در درایوهای سیار</td>
+           </tr>
+                                                                                    <tr>
+                                                <td class="datasheet-features-type">ضبط صدا</td>
+           </tr>
+                                                                                    <tr>
+                                                <td class="datasheet-features-type">دسترسی به اطلاعات مربوط به شبکه ها را می دهد.</td>
+                                            </tr>
+                                                  <tr>
+                                                <td class="datasheet-features-type">com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE</td>
+           </tr>
+                                                                                    <tr>
+                                                <td class="datasheet-features-type">com.google.android.c2dm.permission.RECEIVE</td>
+          </tr>
+
+</tbody>
+      </table>
+    -->
+    </div>
+    <div id="menu2" class="container tab-pane active"  role="tabpanel"><br>
+      <h3>تغییرات این نسخه</h3>
+       <ul class="datasheet w-100  float-right">
+        <li class="">به برنامه اجازه میدهد تا از امکان پرداخت درون برنامه ای ایران اپس استفاده کند</li>
+        <li class="">باز کردن سوکت های شبکه</li>
+        <li class="">اسفاده از مدیریت انرژی و WakeLocks جهت بیدار نگه داشتن پردازشگر و جلوگیری از کم نور شدن صفحه نمایشگر</li>
+        <li class="">خواندن اطلاعات موجود در درایوهای سیار</li>
+        <li class="">نوشتن اطلاعات در درایوهای سیار</li>
+        <li class="">ضبط صدا</li>
+        <li class="">دسترسی به اطلاعات مربوط به شبکه ها را می دهد.</li>
+        <li class="">com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE</li>
+        <li class="">com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE</li>
+     </ul>
+
+    </div>
+  </div>
+</div>
+
+
+<button onclick="topFunction()" id="myBtn" title="بالای صفحه">
+  <i class="far fa-caret-square-up" ></i></button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
   }
-
- .dropbtn:hover {
-  background-color: white;
-  color: #DC1AE8;
-}
-
-.dropdown-content {
-
-  float: right;
-  display: none;
-  position: fixed;
-  background-color: white;
-  width: 100%;
-  right: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-
-}
-
-.dropdown-content .header {
-  background: red;
-  color: white;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.dropdown:hover .dropbtn {
-  background-color: white;
-  color: #DC1AE8;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: right;
-  width: 20%;
-  padding: 10px;
-  background-color:white;
-
-}
-
-.column a {
-  float: none;
-  color: purple;
-  padding: 16px;
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  text-align: center !important;
-  text-align: center;
-  border-radius: 5px;
-  /*border-right: 5px solid lime;
-  margin-bottom: 5px;
-  */
-}
-
-.column a:hover {
-  background-color: #ddd;
-  background-color: rgba(0,255,0,.5);
-  background-color:#DC1AE8 ;
-  color: white;
-
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-a.icon {
-  padding: 18px 50px;
-  text-align: center;
-  font-weight: bold;
-  margin: 0;
-  outline: 0;
-  text-decoration: none;
-}
-
-form{
-  font-family: naz;
-  margin-top: 5px;
-  margin-left: 10px;
-  float: left;
-    position: relative;
-    transition: all 1s;
-    width: 200px;
-    cursor: pointer;
-    height: 50px;
-    background: white;
-    box-sizing: border-box;
-    border-radius: 25px;
-    border: 4px solid white;
-    padding: 5px;
-}
-
-input{
-  font-family: naz;
-    position: absolute;
-    top: 0;
-    left: 0;
-    direction: rtl;
-    float: left;
-    width: 80%;
-    height: 42.5px;
-    line-height: 30px;
-    outline: 0;
-    border: 0;
-    display: block;
-    font-size: 1em;
-    border-radius: 20px;
-    padding: 0 20px;
-
-}
-
-form .fa{
-    box-sizing: border-box;
-    padding: 10px;
-    width: 42.5px;
-    height: 42.5px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 50%;
-    color: white;
-    background-color: lime;
-    text-align: center;
-    font-size: 16px;
-    transition: all 1s;
-}
-
-
-form:hover input{
-    display: block;
-}
-
-
-.profile {
-  float: left;
-  font-size: 18px;
-  color: white;
-  border-radius: 4px;
-  font-family: naz;
-  margin-left: 20px;
-  margin-top: 4px;
-  padding: 7px;
-  cursor: pointer;
-  font-weight: bold;
-  visibility: visible;
-}
-
-.profile a{
-  padding: 5px;
-  display: inline-block ;
-
-}
-
-.profile i{
-  font-size: 22px;
-  padding-top: 4px;
-}
-
-.profile i:hover{
-  cursor: pointer;
-}
-
-/*    */
-
-
-
-
-.content {
-  z-index: 2;
-  background: white;
-  display: none;
-  width: 100%;
-  height: 0;
-  position: fixed;
-  top: 0;
-
-}
-.content nav {
-  background: lime;
-  border-bottom: 1px solid #ddd;
-  height: 60px;
-  position: relative;
-  direction: rtl;
-  z-index: 2;
-  margin-top: 0px;
-  box-shadow: 0 2px 4px rgba(0,0,0,.2);
-
-
-}
-.content .nav-links {
-  display: block;
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  direction: rtl;
-
-}
-.content .nav-links::before {
-  background: lime;
-  content: '';
-  left: 0;
-  top: 0;
-  height: 159px;
-  position: absolute;
-  opacity: 0;
-  visibility: hidden;
-  width: 100%;
-  transition: all .3s;
-box-shadow: 0 2px 4px rgba(0,0,0,.4);
-
-}
-.content .nav-links li {
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-20px);
-  transition: all .3s;
-  padding: 0;
-  direction: rtl;
-  margin: 0;
-  color: white;
-}
-
-.content .nav-links li:not(:last-child) {
-}
-
-.content .nav-links li a {
-  background: lime;
-  color: white;
-  display: block;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 12px 20px;
-  text-align: left;
-  width: 100%;
-  direction: rtl;
-  text-align: right;
-  transition: all .3s;
-  text-decoration: none;
-}
-
-.content .nav-links li a:hover {
-  color: #DC1AE8;
-}
-
-.content input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
-  visibility: hidden;
-}
-.content input[type="checkbox"]:checked + label {
-  border: 4px solid silver;
-  border-radius: 50%;
-  height: 28px;
-  top: 16px;
-  right: 18px;
-  width: 28px;
-  transform: rotate(-135deg);
-}
-.content input[type="checkbox"]:checked + label::before {
-  background: silver;
-  top: 8px;
-  right: 4px;
-  width: 12px;
-}
-.content input[type="checkbox"]:checked + label::after {
-  background: silver;
-  opacity: 1;
-  top: 8px;
-  right: 4px;
-  visibility: visible;
-  width: 12px;
-}
-.content input[type="checkbox"]:checked + label:hover {
-  border-color: white;
-}
-.content input[type="checkbox"]:checked + label:hover::before, input[type="checkbox"]:checked + label:hover::after {
-  background: white;
-}
-.content input[type="checkbox"]:checked ~ .nav-links::before {
-  opacity: 1;
-  visibility: visible;
-}
-.content input[type="checkbox"]:checked ~ .nav-links li {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-.content input[type="checkbox"]:checked ~ .nav-links li:nth-child(1) {
-  transition-delay: 0s;
-}
-.content input[type="checkbox"]:checked ~ .nav-links li:nth-child(2) {
-  transition-delay: 0.1s;
-}
-.content input[type="checkbox"]:checked ~ .nav-links li:nth-child(3) {
-  transition-delay: 0.2s;
-}
-.content input[type="checkbox"]:checked ~ .nav-links li:nth-child(4) {
-  transition-delay: 0.3s;
-}
-
-.content label {
-  background: none transparent;
-  border: 4px solid white;
-  border-left: 0 solid transparent;
-  border-right: 0 solid transparent;
-  cursor: pointer;
-  display: block;
-  height: 24px;
-  position: absolute;
-  top: 18px;
-  right: 20px;
-  width: 24px;
-  transition: all .2s;
-}
-.content label::before {
-  background: white;
-  content: '';
-  height: 4px;
-  left: 0;
-  position: absolute;
-  top: 6px;
-  width: 24px;
-  transition: all .2s;
-}
-.content label::after {
-  background: white;
-  content: '';
-  height: 4px;
-  left: 0;
-  position: absolute;
-  top: 6px;
-  opacity: 0;
-  visibility: hidden;
-  width: 100%;
-  transform: rotate(90deg);
-  transition: all .2s;
-}
- .content  h3 {
-    font-family: naz;
-    font-weight: bolder;
-    width: 50%;
-    margin: 0px auto;
-    padding-top: 19px;
-    color: white;
-    text-align: center;
-    font-size: 1.17rem;
-  }
-.content form{
-    position: relative;
-    top: -42px;
-    left: 2px;
-    transition: all 1s;
-    width: 50px;
-    height: 50px;
-    background: lime;
-    box-sizing: border-box;
-    border-radius: 25px;
-    border: 4px solid white;
-    padding: 5px;
-    float: left;
-    transform: scale(.7, 0.7);
-}
-
-.content form input{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 42.5px;
-    line-height: 30px;
-    outline: 0;
-    border: 0;
-    display: none;
-    font-size: 1em;
-    border-radius: 20px;
-    font-family: naz;
-    padding-right: 50px;
-    padding-left: 10px;
-}
-
-.content .fa{
-    box-sizing: border-box;
-    padding: 10px;
-    width: 42.5px;
-    height: 42.5px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border-radius: 50%;
-    color: white;
-    text-align: center;
-    font-size: 1.2em;
-    transition: all 2s;
-}
-
-.content form:hover{
-    width: 93%;
-    cursor: pointer;
-    transform: scale(1, 1);
-}
-
-.content form:hover input{
-    display: block;
-}
-
-.content form:hover .fa{
-    color: white;
-  background: lime;
-
-}
-
-
-
-
-.Modal {
-  display: none;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  position: fixed;
-  left: 0;
-  top: 59px;
-  background-color:rgba(0,0,0,.7);
-  overflow: auto;
-}
-
-.progress-bar {
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-/*    */
-  .nav a {
-    direction: rtl;
-    font-family: naz;
-    color: #DC1AE8;
-  }
-
-.nav a.active{
-  background-color: #DC1AE8;
-}
-
-.nav a:hover {
-  color: lime;
-}
-
-/* not active */
-
-.nav-pills {
-  position: relative;
-}
-
-.nav-pills .nav-item  {
-border-right: 1px solid lime;
-border-top: 1px solid lime;
-padding: 0;
-}
-
-.nav-pills .nav-link{
-}
-
-.nav-pills .pill-1  {
-border-left: 1px solid lime;
-
-}
-
-
-/* active (faded) */
-
-.nav-pills .nav-item .active {
-
-  border-radius: 0;
-}
-
-.nav-pills .pill-1 .active {
-  background-color: lime;
-  color: white;
-  border-radius: 0;
-}
-
-.nav-pills .pill-2 .active {
-  background-color: lime;
-  color: white;}
-
-.nav-pills .pill-3 .active {
-  background-color: lime;
-  color: white;
-}
-
-
-.nav-pills .pill-4 .active {
-  background-color: lime;
-  color: white;}
-
-.nav-pills .pill-5 .active {
-  background-color: lime;
-  color: white;
-}
-
-hr {
-  background-color: lime;
-}
-
-h3,p{
-  font-family: naz;
-  direction: rtl;
 }
-
-.datasheet li{
-  border-bottom: 1px solid white;
-  direction: rtl;
-  padding: 5px;
-
-}
-
-
-
-      .versions h4{
-        font-family: naz;
-        direction: rtl;
-        color: #DC1AE8;
-        padding: 5px;
-
-      }
-
-.item {
-  border-right: 1px solid white;
-}
-
-.versions .item a{
-  border: 1px solid silver;
-  display: inline-block;
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 0;
-  color: white;
-  font-family: naz;
-  direction: rtl;
-  background-color: #6c757d;
-  font-weight: bold;
-}
-
-.item a span{
-  color: white;
-}
-
-.item a:hover{
-  transform: translateY(-1px);
-box-shadow: 0 2px 4px rgba(0,0,0,.2);
-
-}
-
-.item a span:nth-child(2){
-  font-weight: normal;
-  color: silver;
-}
-
-.versions .row {
-
-}
-
-button a{
-  text-decoration: none;
-  color: white;
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
-button a:hover{
-  color: white;
-  text-decoration: none;
-}
-
-
-
-
-
-   #myModal2   a{
-        text-decoration: none;
-        font-family: naz;
-        direction: rtl;
-        color: #DC1AE8;
-
-      }
-   #myModal2 a:hover{
-      color: lime;
-      text-decoration: none;
-    }
-    #myModal2  li {
-        direction: rtl;
-        color: lime;
-      }
-
-
-     #myModal2 h4{
-        position: relative;
-        right: -45px !important;
-     }
-
-
-   #myModal3   a{
-        text-decoration: none;
-        font-family: naz;
-        direction: rtl;
-        color: #DC1AE8;
-
-      }
-   #myModal3 a:hover{
-      color: lime;
-      text-decoration: none;
-    }
-    #myModal3  li {
-        direction: rtl;
-        color: lime;
-      }
-     #myModal3 h4{
-        position: relative;
-        right: -45px !important;
-     }
-
-    .comment,.question {
-      border-top-left-radius: 20px;
-      border-bottom-right-radius: 20px;
-    }
-    .comment-info  img {
-        width: 15px;
-        height: 15px;
-        opacity: .8;
-      }
-     .comment-info .date ,p,.name {
-        direction: rtl;
-        font-family: naz;
-      }
-    .comment  .name ,.comment .date  {
-        font-size: 15px;
-        padding-top: 4px;
-        color: silver;
-      }
-
-.vs {
-  font-size: 15px;
-  color: silver;
-  font-family: naz;
-  padding-bottom: 4px;
-  direction: rtl;
-}
-
-
-     .user-icon {
-     }
-   .comment .user-icon i{
-      font-size: 35px;
-      color: #DC1AE8;
-      padding: 1px;
-
-    }
-      .all-comments {
-          color: #DC1AE8;
-          border-bottom: 1px dashed #DC1AE8;
-          direction: rtl;
-      }
-
-      .all-comments i{
-      }
-      .all-comments:hover {
-          color: lime;
-          text-decoration: none;
-      }
-    .questions {
-
-    }
-  .question .user-icon i{
-      font-size: 35px;
-      color: #DC1AE8;
-    }
 
-    .question .date ,.question p,.name {
-        direction: rtl;
-        font-family: naz;
-      }
-    .question-info .name ,.question-info .date ,.question-info .name span{
-        font-size: 15px;
-        padding-top: 7px;
-        color: silver;
-      }
-      .question  .user-icon {
-            padding: 2px 2px;
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  //document.getElementById("myBtn").style.color = "#ccc";
+}
+
+</script>
+
+
+<script>
+// Disable form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
         }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
 
-    .reply-info .name ,.reply-info .date ,.reply-info .name span{
-        font-size: 15px;
-        padding-top: 7px;
-        color: silver;
-      }
-
-
-#full-stars-example-two {
-  /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
-  /* make hover effect work properly in IE */
-  /* hide radio inputs */
-  /* hide 'none' input from screenreaders */
-  /* set icon padding and size */
-  /* set default star color */
-  /* if any input is checked, make its following siblings grey */
-  /* make all stars gold on rating group hover */
-  /* make hovered input's following siblings grey on hover */
-}
-#full-stars-example-two .rating-group {
-  display: inline-flex;
-}
-#full-stars-example-two .rating__icon {
-  pointer-events: none;
-}
-#full-stars-example-two .rating__input {
-  position: absolute !important;
-  left: -9999px !important;
-}
-#full-stars-example-two .rating__input--none {
-  display: none;
-}
-#full-stars-example-two .rating__label {
-  cursor: pointer;
-  padding: 0 0.1em;
-  font-size: 2rem;
-}
-#full-stars-example-two .rating__icon--star {
-  color: gold;
-}
-#full-stars-example-two .rating__input:checked ~ .rating__label .rating__icon--star {
-  color: #ddd;
-}
-#full-stars-example-two .rating-group:hover .rating__label .rating__icon--star {
-  color: gold;
-}
-#full-stars-example-two .rating__input:hover ~ .rating__label .rating__icon--star {
-  color: #ddd;
-}
-
-
-
- .desc{
-  font-family: naz;
-  direction: rtl;
-  color: gray;
-  font-size: 18px;
-  margin-top: 15px;
-  margin-left: 5px;
- }
-  .form-control,button,h3{
-    direction: rtl;
-    font-family: naz;
-  }
-
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: transparent;
-  color: #ccc;
-  cursor: pointer;
-  padding: 0;
-}
-
-#myBtn i {
-  font-size: 40px;
-}
-
-#myBtn:hover {
-  color: lime;
-}
-/* make header responsive*/
-@media  screen and (max-width: 787px) {
-
-.navbar {
-  display: none !important;
-}
-
-.content {
-  display: block !important;
-}
-
-.content form:hover{
-    width:200px;
-    cursor: pointer;
-    transform: scale(1, 1);
-}
-
-#myBtn i {
-}
-
-
-#myBtn  {
-  right: 25px;
-  bottom: 5px;
-}
-
-}
-
-@media  screen and (max-width: 480px) {
-
-.navbar {
-  display: none;
-}
-
-.content {
-  display: block;
-}
-
-.content form:hover{
-    width:94%;
-    cursor: pointer;
-    transform: scale(1, 1);
-}
-
-    .comment-info  img {
-        width: 12px;
-        height: 12px;
-        opacity: .6;
-      }
-   .comment-info   .date ,p,.comment .name {
-        direction: rtl;
-        font-family: naz;
-      }
-    .comment  .name ,.comment .date {
-        font-size: 10px;
-        padding-top: 7px;
-        color: silver;
-        font-weight: bold;
-      }
-
-.vs {
-  font-size: 10px;
-}
-
-    .comment .user-icon i{
-      font-size: 25px;
-      color: #DC1AE8;
-    }
-
-   .comment p{
-      font-size: 13px;
-    }
-
-/*    */
-   .question-info   .date ,p,.comment .name {
-        direction: rtl;
-        font-family: naz;
-      }
-    .question-info  .name ,.question-info .date,.question-info .name span {
-        font-size: 11px;
-        padding-top: 7px;
-        color: silver;
-        font-weight: bold;
-      }
-
-    .reply-info .name span {
-      margin-left: 4px;
-    }
-    .question-info .name span {
-      margin-left: 4px;
-    }
-   .question .user-icon i{
-      font-size: 25px;
-      color: #DC1AE8;
-    }
-
-   .question p{
-      font-size: 13px;
-    }
-
-
-
-    .reply-box i{
-      font-size: 20px;
-    }
-    .reply-info  .name ,.reply-info .date,.reply-info .name span {
-        font-size: 11px;
-        padding-top: 7px;
-        color: silver;
-        font-weight: bold;
-      }
-    .rate {
-      margin-top: 2px;
-    }
-#myBtn:hover {
-  color: #ccc;
-}
-
-.nav-pills .nav-link{
-  font-size: 13px;
-  font-weight: bold;
-}
-
-.nav-pills {
-  position: relative;
-  top: 5px;
-}
-
-}
+  </body>
+</html>
