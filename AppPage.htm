@@ -550,12 +550,15 @@ $(document).ready(function(){
   <ul class="nav nav-pills float-right text-right clearfix" role="tablist">
 
     <li class="nav-item pill-1 float-right">
-      <a class="nav-link " data-toggle="pill" href="#home">نظرات</a>
+      <a class="nav-link " data-toggle="pill" href="#qus">پرسش&zwnj;ها</a>
     </li>
     <li class="nav-item pill-2 float-right">
-      <a class="nav-link" data-toggle="pill" href="#menu1">دسترسی ها</a>
+      <a class="nav-link " data-toggle="pill" href="#home">نظرات</a>
     </li>
     <li class="nav-item pill-3 float-right">
+      <a class="nav-link" data-toggle="pill" href="#menu1">دسترسی&zwnj;ها</a>
+    </li>
+    <li class="nav-item pill-4 float-right">
       <a class="nav-link active" data-toggle="pill" href="#menu2">توضیحات</a>
     </li>
   </ul>
@@ -563,6 +566,94 @@ $(document).ready(function(){
   <div class="tab-content text-right clearfix" >
     <br>
 <hr>
+    <div id="qus" class="container tab-pane fade" role="tabpanel">
+<div class="questions mt-2 clearfix pt-4">
+  <button class="float-left p-2"
+               data-toggle="modal" data-target="#myModal5"
+   style="border-radius: 5px;background-color: lime;cursor: pointer;">پرسش جدید <i class="fas fa-plus px-1" style="font-size: 10px;"></i></button>
+      <h3>پرسش&zwnj;ها</h3>
+
+  <div class="question container mt-4 clearfix bg-light">
+    <div class="user-icon text-right float-right text-right mt-2">
+        <i class="fas fa-question bg-light"></i>
+      </div>
+    <div class="question-box">
+      <div class="question-info float-right mt-2">
+        <div class="name float-right bg-light ml-2 mr-2"><span>پرسش گر:</span>
+                سجاد</div>
+        <span class="date float-right ml-2 text- bg-light">98/4/30</span>
+      </div>
+
+    </div>
+    <br>
+      <p class="question-text w-100 float-right text-right mt-1 pr-5">
+        این برنامه چجوری کار می کند؟
+      </p>
+        <div class="reply container mt-5 clearfix bg-light">
+        <div class="user-icon text-right float-right text-right mt-2">
+                <i class="fas fa-reply bg-light"></i>
+            </div>
+        <div class="reply-box">
+            <div class="reply-info float-right mt-2">
+                <div class="name float-right bg-light ml-2 mr-2"><span>پاسخ از:  </span>
+                علیرضا</div>
+                <span class="date float-right ml-2 text- bg-light">98/4/30</span>
+            </div>
+
+        </div>
+        <br>
+            <p class="question-text w-100 float-right text-right mt-1 pr-5">
+                این برنامه به آسانی کار می کند.
+            </p>
+    </div>
+      <div>
+        <span class="vs float-left">پرسش روی نسخه 1.1</span>
+      </div>
+  </div>
+
+
+  <div class="question container mt-4 clearfix bg-light">
+    <div class="user-icon text-right float-right text-right mt-2">
+        <i class="fas fa-question bg-light"></i>
+      </div>
+    <div class="question-box">
+      <div class="question-info float-right mt-2">
+        <div class="name float-right bg-light ml-2 mr-2"><span>پرسش گر:  </span>
+                رامین</div>
+        <span class="date float-right ml-2 text- bg-light">98/4/30</span>
+      </div>
+
+    </div>
+    <br>
+      <p class="question-text w-100 float-right text-right mt-1 pr-5">
+        کی بروزرسانی می شود؟
+      </p>
+      <div>
+        <span class="vs float-left">پرسش روی نسخه 3.0</span>
+      </div>
+  </div>
+
+
+  <div class="question container mt-4 clearfix bg-light">
+    <div class="user-icon text-right float-right text-right mt-2">
+        <i class="fas fa-question bg-light"></i>
+      </div>
+    <div class="question-box">
+      <div class="question-info float-right mt-2">
+        <div class="name float-right bg-light ml-2 mr-2"><span>پرسش گر:  </span>
+                محمد حسن</div>
+        <span class="date float-right ml-2 text- bg-light">98/4/30</span>
+      </div>
+
+    </div>
+    <br>
+      <p class="question-text w-100 float-right text-right mt-1 pr-5">
+        خرید درون برنامه ایش انجام نمی شود؟
+      </p>
+  </div>
+
+</div>
+    </div>
     <div id="home" class="container tab-pane fade" role="tabpanel"><br>
       <button
                data-toggle="modal" data-target="#myModal4"
@@ -680,98 +771,6 @@ $(document).ready(function(){
   <a href="#" class="all-comments text-left float-left mt-2">مشاهده همه نظرات  <i class="fa fa-angle-left"></i></a>
 <!---
 -->
-<hr class="question-before mt-5 w-25 float-right">
-<br>
-<br>
-<div class="questions mt-2 clearfix pt-4">
-  <button class="float-left p-2"
-               data-toggle="modal" data-target="#myModal5"
-   style="border-radius: 5px;background-color: lime;cursor: pointer;">پرسش جدید <i class="fas fa-plus px-1" style="font-size: 10px;"></i></button>
-      <h3>پرسش&zwnj;ها</h3>
-
-  <div class="question container mt-4 clearfix bg-light">
-    <div class="user-icon text-right float-right text-right mt-2">
-        <i class="fas fa-question bg-light"></i>
-      </div>
-    <div class="question-box">
-      <div class="question-info float-right mt-2">
-        <div class="name float-right bg-light ml-2 mr-2"><span>پرسش گر:</span>
-                سجاد</div>
-        <span class="date float-right ml-2 text- bg-light">98/4/30</span>
-      </div>
-
-    </div>
-    <br>
-      <p class="question-text w-100 float-right text-right mt-1 pr-5">
-        این برنامه چجوری کار می کند؟
-      </p>
-        <div class="reply container mt-5 clearfix bg-light">
-        <div class="user-icon text-right float-right text-right mt-2">
-                <i class="fas fa-reply bg-light"></i>
-            </div>
-        <div class="reply-box">
-            <div class="reply-info float-right mt-2">
-                <div class="name float-right bg-light ml-2 mr-2"><span>پاسخ از:  </span>
-                علیرضا</div>
-                <span class="date float-right ml-2 text- bg-light">98/4/30</span>
-            </div>
-
-        </div>
-        <br>
-            <p class="question-text w-100 float-right text-right mt-1 pr-5">
-                این برنامه به آسانی کار می کند.
-            </p>
-    </div>
-      <div>
-        <span class="vs float-left">پرسش روی نسخه 1.1</span>
-      </div>
-  </div>
-
-
-  <div class="question container mt-4 clearfix bg-light">
-    <div class="user-icon text-right float-right text-right mt-2">
-        <i class="fas fa-question bg-light"></i>
-      </div>
-    <div class="question-box">
-      <div class="question-info float-right mt-2">
-        <div class="name float-right bg-light ml-2 mr-2"><span>پرسش گر:  </span>
-                رامین</div>
-        <span class="date float-right ml-2 text- bg-light">98/4/30</span>
-      </div>
-
-    </div>
-    <br>
-      <p class="question-text w-100 float-right text-right mt-1 pr-5">
-        کی بروزرسانی می شود؟
-      </p>
-      <div>
-        <span class="vs float-left">پرسش روی نسخه 3.0</span>
-      </div>
-  </div>
-
-
-  <div class="question container mt-4 clearfix bg-light">
-    <div class="user-icon text-right float-right text-right mt-2">
-        <i class="fas fa-question bg-light"></i>
-      </div>
-    <div class="question-box">
-      <div class="question-info float-right mt-2">
-        <div class="name float-right bg-light ml-2 mr-2"><span>پرسش گر:  </span>
-                محمد حسن</div>
-        <span class="date float-right ml-2 text- bg-light">98/4/30</span>
-      </div>
-
-    </div>
-    <br>
-      <p class="question-text w-100 float-right text-right mt-1 pr-5">
-        خرید درون برنامه ایش انجام نمی شود؟
-      </p>
-  </div>
-
-</div>
-  <a href="#" class="all-comments text-left float-left mt-2">مشاهده همه پرسش&zwnj;ها
-   <i class="fa fa-angle-left"></i></a>
-
     </div>
     <div id="menu1" class="container tab-pane fade" role="tabpanel"><br>
       <h3>دسترسی ها</h3>
