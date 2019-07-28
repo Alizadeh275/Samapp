@@ -23,9 +23,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Add jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Add venobox -->
+<link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="venobox/venobox.min.js"></script>
+
 
     <title></title>
 
@@ -41,7 +46,6 @@
 }*/
 
 	</style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 
@@ -57,6 +61,26 @@ $(document).ready(function(){
     $(".Modal").css("display","none");
 
   });
+
+
+
+
+
+  /* default settings */
+  $('.venobox').venobox();
+
+
+  /* open content with custom settings */
+  $('.venobox_custom').venobox({
+    framewidth: '300px',
+    frameheight: 'auto',
+    border: '6px',
+    bordercolor: '#ba7c36',
+    numeratio: true,
+  });
+
+  /* auto-open #firstlink on page load */
+  $("#firstlink").venobox().trigger('click');
 
 
 });
@@ -182,7 +206,7 @@ $(document).ready(function(){
 
 
 
-<div class="container  mt-5 bg-light" style="position: relative;top:50px;">
+<div class="container pb-3  mt-5 bg-light" style="position: relative;top:50px;">
 	<div class="row flex-row-reverse">
     <div class="col-md-2 bg-light p-4 p-md-2">
       <img src="icons/cover_257.png" width="100%" alt="">
@@ -547,27 +571,67 @@ $(document).ready(function(){
 
 <div class="type-one">
   <div class="slider-gallery" id="sync1">
-    <div class="item link"><img alt="Uptodown App Store screenshot 1 " class="ico_list lazy-hidden" data-src-large="https://img.utdstc.com/screen/13/uptodown-android-028.png:l" id="img_id_0" itemprop="screenshot" onclick="open_screen(0)" src="https://img.utdstc.com/screen/13/uptodown-android-028.png:xxs" srcset="https://img.utdstc.com/screen/13/uptodown-android-028.png:xs 1x, https://img.utdstc.com/screen/13/uptodown-android-028.png:s 2x, https://img.utdstc.com/screen/13/uptodown-android-028.png:m 3x"> </div>
+    <div class="item link">
+      <a class="venobox_custom" data-gall="myGallery" href="screenshots/s1.jpg">
+      <img src="screenshots/s1.jpg" alt="image-gallery" />
+      </a>
+</div>
 
-    <div class="item link"><img alt="Uptodown App Store screenshot 2 " class="ico_list lazy-hidden" data-src-large="https://img.utdstc.com/screen/13/uptodown-android-012.png:l" id="img_id_1" itemprop="screenshot" onclick="open_screen(1)" src="https://img.utdstc.com/screen/13/uptodown-android-012.png:xxs" srcset="https://img.utdstc.com/screen/13/uptodown-android-012.png:xs 1x, https://img.utdstc.com/screen/13/uptodown-android-012.png:s 2x, https://img.utdstc.com/screen/13/uptodown-android-012.png:m 3x"> </div>
+    <div class="item link">
+      <a class="venobox_custom" data-gall="myGallery" href="screenshots/s2.jpg">
+      <img src="screenshots/s2.jpg" alt="image-gallery" />
+      </a>
+</div>
 
-    <div class="item link"><img alt="Uptodown App Store screenshot 3 " class="ico_list lazy-hidden" data-src-large="https://img.utdstc.com/screen/13/uptodown-android-001.png:l" id="img_id_2" itemprop="screenshot" onclick="open_screen(2)" src="https://img.utdstc.com/screen/13/uptodown-android-001.png:xxs" srcset="https://img.utdstc.com/screen/13/uptodown-android-001.png:xs 1x, https://img.utdstc.com/screen/13/uptodown-android-001.png:s 2x, https://img.utdstc.com/screen/13/uptodown-android-001.png:m 3x"> </div>
+    <div class="item link">
+      <a class="venobox_custom" data-gall="myGallery" href="screenshots/s3.jpg">
+      <img src="screenshots/s3.jpg" alt="image-gallery" />
+      </a>
+</div>
 
-    <div class="item link"><img alt="Uptodown App Store screenshot 4 " class="ico_list lazy-loaded" data-src="https://img.utdstc.com/screen/13/uptodown-android-029.png:xxs" data-src-large="https://img.utdstc.com/screen/13/uptodown-android-029.png:l" id="img_id_3" itemprop="screenshot" onclick="open_screen(3)" src="https://img.utdstc.com/screen/13/uptodown-android-029.png:xxs" srcset="https://img.utdstc.com/screen/13/uptodown-android-029.png:xs 1x, https://img.utdstc.com/screen/13/uptodown-android-029.png:s 2x, https://img.utdstc.com/screen/13/uptodown-android-029.png:m 3x"> </div>
+    <div class="item link">
+      <a class="venobox_custom" data-gall="myGallery" href="screenshots/s4.jpg">
+      <img src="screenshots/s4.jpg" alt="image-gallery" />
+      </a>
+</div>
 
-    <div class="item link"><img alt="Uptodown App Store screenshot 5 " class="ico_list lazy-loaded" data-src="https://img.utdstc.com/screen/13/uptodown-android-004.png:xxs" data-src-large="https://img.utdstc.com/screen/13/uptodown-android-004.png:l" id="img_id_4" itemprop="screenshot" onclick="open_screen(4)" src="https://img.utdstc.com/screen/13/uptodown-android-004.png:xxs" srcset="https://img.utdstc.com/screen/13/uptodown-android-004.png:xs 1x, https://img.utdstc.com/screen/13/uptodown-android-004.png:s 2x, https://img.utdstc.com/screen/13/uptodown-android-004.png:m 3x"> </div>
+    <div class="item link">
+      <a class="venobox_custom" data-gall="myGallery" href="screenshots/s5.png">
+      <img src="screenshots/s5.png" alt="image-gallery" />
+      </a>
+</div>
 
-    <div class="item link"><img alt="Uptodown App Store screenshot 6 " class="ico_list lazy-loaded" data-src="https://img.utdstc.com/screen/13/uptodown-android-005.png:xxs" data-src-large="https://img.utdstc.com/screen/13/uptodown-android-005.png:l" id="img_id_5" itemprop="screenshot" onclick="open_screen(5)" src="https://img.utdstc.com/screen/13/uptodown-android-005.png:xxs" srcset="https://img.utdstc.com/screen/13/uptodown-android-005.png:xs 1x, https://img.utdstc.com/screen/13/uptodown-android-005.png:s 2x, https://img.utdstc.com/screen/13/uptodown-android-005.png:m 3x"> </div>
+    <div class="item link">
+      <a class="venobox_custom" data-gall="myGallery" href="screenshots/s1.jpg">
+      <img src="screenshots/s1.jpg" alt="image-gallery" />
+      </a>
+</div>
 
-    <div class="item link"><img alt="Uptodown App Store screenshot 7 " class="ico_list lazy-loaded" data-src="https://img.utdstc.com/screen/13/uptodown-android-015.png:xxs" data-src-large="https://img.utdstc.com/screen/13/uptodown-android-015.png:l" id="img_id_6" itemprop="screenshot" onclick="open_screen(6)" src="https://img.utdstc.com/screen/13/uptodown-android-015.png:xxs" srcset="https://img.utdstc.com/screen/13/uptodown-android-015.png:xs 1x, https://img.utdstc.com/screen/13/uptodown-android-015.png:s 2x, https://img.utdstc.com/screen/13/uptodown-android-015.png:m 3x"> </div>
+    <div class="item link">
+      <a class="venobox_custom" data-gall="myGallery" href="screenshots/s2.jpg">
+      <img src="screenshots/s2.jpg" alt="image-gallery" />
+      </a>
+</div>
 
-    <div class="item link"><img alt="Uptodown App Store screenshot 8 " class="ico_list lazy-loaded" data-src="https://img.utdstc.com/screen/13/uptodown-android-018.png:xxs" data-src-large="https://img.utdstc.com/screen/13/uptodown-android-018.png:l" id="img_id_7" itemprop="screenshot" onclick="open_screen(7)" src="https://img.utdstc.com/screen/13/uptodown-android-018.png:xxs" srcset="https://img.utdstc.com/screen/13/uptodown-android-018.png:xs 1x, https://img.utdstc.com/screen/13/uptodown-android-018.png:s 2x, https://img.utdstc.com/screen/13/uptodown-android-018.png:m 3x"> </div>
+    <div class="item link">
+      <a class="venobox_custom" data-gall="myGallery" href="screenshots/s3.jpg">
+      <img src="screenshots/s3.jpg" alt="image-gallery" />
+      </a>
+</div>
 
-    <div class="item link"><img alt="Uptodown App Store screenshot 9 " class="ico_list lazy-loaded" data-src="https://img.utdstc.com/screen/13/uptodown-android-027.png:xxs" data-src-large="https://img.utdstc.com/screen/13/uptodown-android-027.png:l" id="img_id_8" itemprop="screenshot" onclick="open_screen(8)" src="https://img.utdstc.com/screen/13/uptodown-android-027.png:xxs" srcset="https://img.utdstc.com/screen/13/uptodown-android-027.png:xs 1x, https://img.utdstc.com/screen/13/uptodown-android-027.png:s 2x, https://img.utdstc.com/screen/13/uptodown-android-027.png:m 3x"> </div>
+    <div class="item link">
+      <a class="venobox_custom" data-gall="myGallery" href="screenshots/s4.jpg">
+      <img src="screenshots/s4.jpg" alt="image-gallery" />
+      </a>
+</div>
      </div>
       </div>
 
 </div>
+
+
+
+
 
 <div class="container">
   <br>
@@ -958,6 +1022,17 @@ function topFunction() {
     });
   }, false);
 })();
+</script>
+
+
+<!-- gallary script -->
+
+<script type="text/javascript">
+
+
+
+
+
 </script>
 
   </body>
