@@ -328,8 +328,16 @@ form:hover input{
   left: 0;
   width: 100%;
   direction: rtl;
+  height: 0;
+
 
 }
+
+
+.content input[type="checkbox"]:checked ~ .nav-links {
+  height: auto;
+}
+
 .content .nav-links::before {
   background: lime;
   content: '';
@@ -528,15 +536,6 @@ box-shadow: 0 2px 4px rgba(0,0,0,.4);
     transition: all 2s;
 }
 
-.content form:hover{
-    width: 93%;
-    cursor: pointer;
-    transform: scale(1, 1);
-}
-
-.content form:hover input{
-    display: block;
-}
 
 .content form:hover .fa{
     color: white;
@@ -993,11 +992,7 @@ button a:hover{
   display: block !important;
 }
 
-.content form:hover{
-    width:200px;
-    cursor: pointer;
-    transform: scale(1, 1);
-}
+
 
 #myBtn i {
 }
@@ -1020,11 +1015,7 @@ button a:hover{
   display: block;
 }
 
-.content form:hover{
-    width:94%;
-    cursor: pointer;
-    transform: scale(1, 1);
-}
+
 
     .comment-info  img {
         width: 12px;

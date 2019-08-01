@@ -47,18 +47,52 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
+    var $window = $(window);
+
 
   $(".content form").click(function(){
 
-    $(".Modal").css("display","block");
+        var windowsize = $window.width();
+        if (windowsize <758 ) {
+            //if the window is greater than 440px wide then turn on jScrollPane..
+            $(".content form").css("width","200px");
+            $(".content form").css("cursor","pointer") ;
+            $(".content form").css("transform","scale(1,1)");
+            $(".content form input").css("display","block");
+             $(".Modal").css("display","block");
+
+        }
+        if (windowsize <480 ) {
+            //if the window is greater than 440px wide then turn on jScrollPane..
+            $(".content form").css("width","94%");
+            $(".content form").css("cursor","pointer") ;
+            $(".content form").css("transform","scale(1,1)");
+            $(".content form input").css("display","block");
+            $(".content form input").focus();
+             $(".Modal").css("display","block");
+
+        }else if(windowsize <758){
+            //if the window is greater than 440px wide then turn on jScrollPane..
+            $(".content form").css("width","200px");
+            $(".content form").css("cursor","pointer") ;
+            $(".content form").css("transform","scale(1,1)");
+            $(".content form input").css("display","block");
+            $(".content form input").focus();
+             $(".Modal").css("display","block");
+        }
 
   });
 
-  $(".content form").mouseleave(function(){
 
-    $(".Modal").css("display","none");
+  $(".Modal").click(function(){
+            $(".content form").css("width","50px");
+            $(".content form").css("cursor","pointer") ;
+            $(".content form").css("transform","scale(.7,.7)");
+            $(".content form input").css("display","none");
+             $(".Modal").css("display","none");
 
   });
+
 
 
 
@@ -172,7 +206,7 @@ $(document).ready(function(){
           <a href="#">خانوادگی</a>
           <a href="#">رانندگی</a>
           <a href="#">شبیه سازی</a>
-          <a href="#">کلمات و دانستنی ها</a>
+          <a href="CategoryPage.htm">کلمات و دانستنی ها</a>
         </div>
         <div class="column">
           <a href="#">معمایی</a>
@@ -387,7 +421,7 @@ $(document).ready(function(){
   <li><a href="">خانوادگی</a></li>
   <li><a href="">رانندگی</a></li>
   <li><a href="">شبیه سازی</a></li>
-  <li><a href="">کلمات و دانستنی ها</a></li>
+  <li><a href="CategoryPage.htm">کلمات و دانستنی ها</a></li>
   <li><a href="">معمایی</a></li>
   <li><a href="">ورزشی</a></li>
   <li><a href="">ماجرایی</a></li>
@@ -1025,13 +1059,6 @@ function topFunction() {
 
 <!-- gallary script -->
 
-<script type="text/javascript">
-
-
-
-
-
-</script>
 
   </body>
 </html>

@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+ 
+<link rel="stylesheet" href="SpecificCategory.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+
+
+    <title>سَماپ</title>
+    <style>
+@font-face {
+  font-family: naz;
+  src:url("Vazir-FD.ttf");
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+    var $window = $(window);
+
+
+  $(".content form").click(function(){
+
+        var windowsize = $window.width();
+        if (windowsize <758 ) {
+            //if the window is greater than 440px wide then turn on jScrollPane..
+            $(".content form").css("width","200px");
+            $(".content form").css("cursor","pointer") ;
+            $(".content form").css("transform","scale(1,1)");
+            $(".content form input").css("display","block");
+             $(".Modal").css("display","block");
+
+        }
+        if (windowsize <480 ) {
+            //if the window is greater than 440px wide then turn on jScrollPane..
+            $(".content form").css("width","94%");
+            $(".content form").css("cursor","pointer") ;
+            $(".content form").css("transform","scale(1,1)");
+            $(".content form input").css("display","block");
+             $(".Modal").css("display","block");
+
+        }else if(windowsize <758){
+            //if the window is greater than 440px wide then turn on jScrollPane..
+            $(".content form").css("width","200px");
+            $(".content form").css("cursor","pointer") ;
+            $(".content form").css("transform","scale(1,1)");
+            $(".content form input").css("display","block");
+             $(".Modal").css("display","block");         
+        }
+
+  });
+
+
+  $(".Modal").click(function(){
+            $(".content form").css("width","50px");
+            $(".content form").css("cursor","pointer") ;
+            $(".content form").css("transform","scale(.7,.7)");
+            $(".content form input").css("display","none");
+             $(".Modal").css("display","none");
+
+
+  });
+
+
+
+
+});
+</script>
+  </head>
+  <body>  
+    <div class="content">
+      <nav>
+        <input type="checkbox" id="hamburger1" />
+        <label for="hamburger1"></label>
+        <h3>سَماپ</h3>
+<form action="">
+  <input type="search" placeholder="جست و جو ...">
+  <i class="fa fa-search"></i>
+</form>
+        <ul class="nav-links">
+          <li><a href="#">برنامه ها</a></li>
+          <li><a href="#">بازی ها</a></li>
+          <li><a href="Login.htm">ورود / عضویت</a></li>
+        </ul>
+      </nav>
+<div class="Modal"></div>
+
+    </div>
+
+<div class="navbar">
+  <a class="icon" href="#home">سَماپ</a>
+  <div class="dropdown">
+    <button class="dropbtn">برنامه ها 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+  
+      <div class="row">
+         <div class="column">
+          <a href="#">آب و هوا</a>
+          <a href="#">آشپزی و رستوران</a>
+          <a href="#">آموزش</a>
+          <a href="#">ابزارها</a>
+        </div>
+      
+        <div class="column">
+          <a href="#">امور مالی</a>       
+          <a href="#">پیام رسان ها</a>         
+          <a href="#">خبرها و نشریات</a>
+          <a href="#">خرید </a>
+
+        </div>
+        <div class="column">
+          <a href="#">دارو و درمان</a>          
+          <a href="#">رفت و آمد</a>
+          <a href="#">سبک زندگی</a> 
+          <a href="#">سرگرمی</a>          
+
+        </div>
+        <div class="column">
+          <a href="#">سیر و سفر</a>
+          <a href="#">شبکه های اجتماعی</a>
+          <a href="#">شخصی سازی</a>
+          <a href="#">عکاسی</a>       
+
+        </div>
+        <div class="column">
+          <a href="#">مذهبی</a>
+          <a href="#">موسیقی و صدا</a>
+          <a href="#">ورزشی</a>
+          <a href="#">ویدیو و رسانه</a>
+           </div>
+      </div>
+    </div>
+  </div> 
+<!---
+-->  
+  <div class="dropdown">
+    <button class="dropbtn">بازی ها 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+  
+      <div class="row">
+        <div class="column">
+          <a href="#">آموزشی</a>
+          <a href="#">استراتژی </a>
+          <a href="#">اکشن</a>
+          <a href="#">امتیازی</a>
+        </div>
+        <div class="column">
+          <a href="#">خانوادگی</a>
+          <a href="#">رانندگی</a>
+          <a href="#">شبیه سازی</a>
+          <a href="#" style="font-weight: bold;">کلمات و دانستنی ها</a>
+        </div>
+        <div class="column">
+          <a href="#">معمایی</a>
+          <a href="#">ورزشی</a>
+          <a href="#">ماجرایی</a>
+          <a href="#">تفننی</a>
+
+      </div>
+
+      </div>
+    </div>
+  </div> 
+  <!---
+  -->
+
+<form action="">
+  <input type="search" placeholder="جست و جو...">
+  <i class="fa fa-search"></i>
+</form>
+
+
+
+<div class="profile">
+  <a href="Login.htm"  target="blank">ورود / عضویت</a>
+  
+  <i class="fas fa-user"></i>
+</div>
+</div>
+<br>
+<h1 style="background-color: transparent;
+ color:#DC1AE8; text-align: center; margin-bottom: 0;
+width:80%;margin: auto;margin-top: 70px;">کلمات و دانستنی&zwnj;ها</h1>
+
+<div class="list first">
+ <a href="#" class="tag">جدیدترین&zwnj;ها</a>
+ <div class="flex">
+
+<div class="card">
+  <div class="card-img">
+    <a href="AppPage.htm">
+      <img src="icons/cover_257.png" alt="">
+    </a>
+  </div>
+  <h3 class="card-title">مدال</h3>
+  <p class="developer"><a href="#">علیزاده</a></p>
+  <div class="Rate">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/half-star.png" alt="">
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-img">
+    <a href="#">
+      <img src="icons/cover_256.png" alt="">
+    </a>
+  </div>
+  <h3 class="card-title">پرسیتی</h3>
+  <p class="developer"><a href="#">ایران اپس</a></p>
+  <div class="Rate">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/half-star.png" alt="">
+  </div>
+</div>  
+<div class="card">
+  <div class="card-img">
+    <a href="#">
+      <img src="icons/cover_128.png" alt="">
+    </a>
+  </div>
+  <h3 class="card-title">مزرعه شمالی</h3>
+  <p class="developer"><a href="#">احسان</a></p>
+  <div class="Rate">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/half-star.png" alt="">
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-img">
+    <a href="#">
+      <img src="icons/cover_127.png" alt="">
+    </a>
+  </div>
+  <h3 class="card-title">دهکده زبان</h3>
+  <p class="developer"><a href="#">علیزاده</a></p>
+  <div class="Rate">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/half-star.png" alt="">
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-img">
+    <a href="#">
+      <img src="icons/cover_257.png" alt="">
+    </a>
+  </div>
+  <h3 class="card-title">Medal</h3>
+  <p class="developer"><a href="#">علیزاده</a></p>
+  <div class="Rate">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/half-star.png" alt="">
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-img">
+    <a href="#">
+      <img src="icons/cover_256.png" alt="">
+    </a>
+  </div>
+  <h3 class="card-title">پرسیتی</h3>
+  <p class="developer"><a href="#">علیزاده</a></p>
+  <div class="Rate">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/half-star.png" alt="">
+  </div>
+</div>  
+
+<div class="card">
+  <div class="card-img">
+    <a href="#">
+      <img src="icons/cover_257.png" alt="">
+    </a>
+  </div>
+  <h3 class="card-title">مزرعه شمالی</h3>
+  <p class="developer"><a href="#">علیزاده</a></p>
+  <div class="Rate">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/half-star.png" alt="">
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-img">
+    <a href="#">
+      <img src="icons/cover_256.png" alt="">
+    </a>
+  </div>
+  <h3 class="card-title">مزرعه شمالی</h3>
+  <p class="developer"><a href="#">علیزاده</a></p>
+  <div class="Rate">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/half-star.png" alt="">
+  </div>
+</div>  
+<div class="card">
+  <div class="card-img">
+    <a href="#">
+      <img src="icons/cover_128.png" alt="">
+    </a>
+  </div>
+  <h3 class="card-title">مزرعه شمالی</h3>
+  <p class="developer"><a href="#">علیزاده</a></p>
+  <div class="Rate">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/half-star.png" alt="">
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-img">
+    <a href="#">
+      <img src="icons/cover_127.png" alt="">
+    </a>
+  </div>
+  <h3 class="card-title">مزرعه شمالی</h3>
+  <p class="developer"><a href="#">علیزاده</a></p>
+  <div class="Rate">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/half-star.png" alt="">
+  </div>
+</div>
+
+
+<div class="card">
+  <div class="card-img">
+    <a href="#">
+      <img src="icons/cover_257.png" alt="">
+    </a>
+  </div>
+  <h3 class="card-title">مزرعه شمالی</h3>
+  <p class="developer"><a href="#">علیزاده</a></p>
+  <div class="Rate">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/half-star.png" alt="">
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-img">
+    <a href="#">
+      <img src="icons/cover_256.png" alt="">
+    </a>
+  </div>
+  <h3 class="card-title">مزرعه شمالی</h3>
+  <p class="developer"><a href="#">علیزاده</a></p>
+  <div class="Rate">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/half-star.png" alt="">
+  </div>
+</div>  
+
+
+
+<div class="card">
+  <div class="card-img">
+    <a href="#">
+      <img src="icons/cover_257.png" alt="">
+    </a>
+  </div>
+  <h3 class="card-title">مزرعه شمالی</h3>
+  <p class="developer"><a href="#">علیزاده</a></p>
+  <div class="Rate">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/half-star.png" alt="">
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-img">
+    <a href="#">
+      <img src="icons/cover_256.png" alt="">
+    </a>
+  </div>
+  <h3 class="card-title">مزرعه شمالی</h3>
+  <p class="developer"><a href="#">علیزاده</a></p>
+  <div class="Rate">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/half-star.png" alt="">
+  </div>
+</div>  
+<div class="card">
+  <div class="card-img">
+    <a href="#">
+      <img src="icons/cover_128.png" alt="">
+    </a>
+  </div>
+  <h3 class="card-title">مزرعه شمالی</h3>
+  <p class="developer"><a href="#">علیزاده</a></p>
+  <div class="Rate">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/half-star.png" alt="">
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-img">
+    <a href="#">
+      <img src="icons/cover_127.png" alt="">
+    </a>
+  </div>
+  <h3 class="card-title">مزرعه شمالی</h3>
+  <p class="developer"><a href="#">علیزاده</a></p>
+  <div class="Rate">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/full-star.png" alt="">
+    <img src="stars/half-star.png" alt="">
+  </div>
+</div>
+
+
+
+
+ </div>
+
+<button class="more-result">
+نتایج بیشتر
+</button>
+ 
+</div>
+
+
+
+
+
+
+
+
+<div class="pre-footer">
+  <a href="#">ورود به بخش توسعه دهندگان</a>
+  <a href="#">سؤالات متداول</a>
+  <a href="#">راهنمای بررسی برنامه ها</a>
+  <a href="#">چرا سَماپ؟</a>
+  <div class="email">
+    <h4>ایمیل:</h4>
+    <p>sajjadalizadeh275800@gmail.com</p>
+  </div>
+    
+</div>
+
+<div class="footer"></div>
+  </body>
+</html>
