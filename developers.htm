@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<!--fontawesome -->
+<link rel="stylesheet" href="developers.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!---
+-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title></title>
+ 
+	<script type="text/javascript">
+   var state=false;
+
+$(document).ready(function(){
+
+  $("#menu,#menu2").click(function(){
+
+		if(!state){
+    	 $("#sidenav").css("width","250px");
+    	 $(".Modal").css("display","block");
+
+		/*document.querySelector(".title").style.width="100%";
+		document.querySelector(".menus").style.width="100%";
+		document.querySelector(".images").style.width="100%";
+		document.querySelector(".forms").style.width="100%";
+		document.querySelector(".others").style.width="100%";
+		document.querySelector(".aboutme").style.width="100%";
+		*/
+		state=true;		
+		}
+		else{
+    	 $("#sidenav").css("width","0px");
+    	 $(".Modal").css("display","none");	
+    	 	state=false	;
+			
+		}
+
+  });
+
+  $(".Modal").click(function(){
+
+    	 $("#sidenav").css("width","0px");
+    	 $(".Modal").css("display","none");	
+    	 	state=false	;	
+
+});
+
+
+});
+
+	</script>
+
+    <style type="text/css">
+ @font-face {
+  font-family: naz;
+  src:url("Vazir-FD.ttf");
+}
+
+    </style>
+  </head>
+  <body class="bg-light">
+
+
+<div class="res-navbar">
+  <div class="icon" class="" style="background-color: lime; display: inline-block;padding-right: 30px;">
+<i class="fas fa-bars ml-3" aria-hidden="true" style="padding: 5px;margin-right: 0;transform: scale(1.7,1.5);" id="menu2"></i>
+ </div>
+<h3>سَماپ</h3>
+  <!---
+  -->
+
+<div class="profile" style="background-color: lime;">
+  <a href="#" style="color: lime;" style="" target="blank">
+  <i class="fas fa-user" style="line-height: 1px;color: white;font-weight: bold;font-size: 25px;" ></i>
+</a>
+  </div>
+</div>
+
+
+
+
+<div class="navbar pr-0">
+  <div class="icon" class="" style="background-color: lime; display: inline-block;padding-right: 30px;">
+<i class="fas fa-bars ml-3" aria-hidden="true" style="cursor: pointer;padding: 5px;margin-right: 0;transform: scale(1.7,1.5);" id="menu"></i>
+  سَماپ (بخش توسعه دهندگان)</div>
+
+  <!---
+  -->
+
+<div class="profile" style="background-color: white;">
+  <a href="#" style="color: lime;"  target="blank">
+  <i class="fas fa-user" style="line-height: 5px;font-size: 20px;" ></i>
+ علیزاده فرد</a>
+  </div>
+</div>
+
+<div id="sidenav">
+	<div class="prof">
+	</div>
+	<div class="aboutme active">
+		
+		<a href="aboutMe.htm" target="_blank">
+			<i class="fab fa-android" style="color: white;font-size: 25px;"></i>برنامه ها
+		</a>
+	</div>
+	<div class="aboutme">
+		
+		<a href="aboutMe.htm" target="_blank">
+			<i class="fas fa-envelope" style="color: white;font-size: 20px;"></i>پیام های سیستمی <sup style="background-color:red;border-radius: 15px;padding:0 6px;">2</sup>
+		</a>
+	</div>
+	<div class="aboutme">
+		
+		<a href="aboutMe.htm" target="_blank">
+			<i class="fa fa-question-circle" style="font-size: 25px;"></i>پرسش ها
+		</a>
+	</div>
+
+	<div class="aboutme">
+		
+		<a href="aboutMe.htm" target="_blank">
+			<i class="fa fa-user-circle-o" style="font-size: 25px;"></i>پروفایل
+		</a>
+	</div>
+
+
+	<div class="aboutme">
+		
+		<a href="aboutMe.htm" target="_blank">
+			<i class="fa fa-support" style="font-size: 25px;"></i>پشتیبانی
+		</a>
+	</div>
+	
+	</div>
+
+
+///////////////////////////////////
+<div class="Modal"></div>
+
+/////////////////////////////////////////////
+<div class="main container clearfix mx-auto">
+	<div class="header">
+	<h3 class="">برنامه&zwnj;ها</h3>
+	<button class="newApp">
+		<i class="fa fa-plus"></i>
+	برنامه جدید</button>		
+	</div>
+	
+	<table class="table-bordered mt-4  w-100 mx-auto">
+		<thead class="flex-row-reverse" style="background-color: limegreen;">
+			<th class="p-2 px-0 text-center d-none d-md-table-cell" scope="col">#</th>
+			<th class="p-2 px-0 text-center" scope="col">نام</th>
+			<th class="p-2 px-0 text-center d-none d-md-table-cell" scope="col">وضعیت</th>
+			<th class="p-2 px-0 text-center d-none d-md-table-cell" 
+			scope="col">تاریخ بروزرسانی</th>
+			<th class="p-2 px-0 text-center d-none d-md-table-cell" 
+			scope="col">تاریخ انتشار</th>
+			<th class="p-2 px-0 text-center" scope="col">عملیات</th>
+		</thead>
+		<tbody>
+			
+		<tr class="">
+			<td class="p-3 text-center d-none d-md-table-cell">1</td>	
+
+			<td class="pt-1 text-center">
+				<a href="" class="w-100 m-0">
+		<img src="icons/cover_257.png" width="40px;" style="display: inline-block;
+		" alt="">
+			<span style="font-size: 15px;" >مدال</span>
+				</a>
+
+			</td>
+			<td class="p-3 text-center d-none d-md-table-cell">
+			<span class="state text-white p-2  text-primary" style="font-weight: bold;">در صف بررسی</span>
+			</td>
+			<td class="p-3 d-none d-md-table-cell text-center">1398/4/5</td>
+			<td class="p-3 d-none d-md-table-cell text-center">1398/5/10</td>
+			<td class="p-3 text-center">
+				<button>ویرایش</button>
+				<button class="remove">
+					<i class="fa fa-trash" style="font-size: 15px;margin-right: 5px;"></i></button>
+			</td>
+		</tr>
+
+<tr class="">
+			<td class="p-3 text-center d-none d-md-table-cell">2</td>	
+
+			<td class="pt-1 text-center">
+				<a href="" class="w-100 m-0">
+		<img src="icons/cover_256.png" width="40px;" style="display: inline-block;
+		" alt="">
+			<span style="font-size: 15px;" >مزرعه شمالی</span>
+				</a>
+
+			</td>
+			<td class="p-3 text-center d-none d-md-table-cell">
+			<span class="state text-white p-2  text-warning" style="font-weight: bold;">پیش نویس</span>
+			</td>
+			<td class="p-3 d-none d-md-table-cell text-center">1398/4/5</td>
+			<td class="p-3 d-none d-md-table-cell text-center">1398/5/10</td>
+			<td class="p-3 text-center">
+				<button>ویرایش</button>
+				<button class="remove">
+					<i class="fa fa-trash" style="font-size: 15px;margin-right: 5px;"></i></button>
+			</td>
+		</tr>
+
+
+			
+		<tr class="">
+			<td class="p-3 text-center d-none d-md-table-cell">3</td>	
+
+			<td class="pt-1 text-center">
+				<a href="" class="w-100 m-0">
+		<img src="icons/cover_127.png" width="40px;" style="display: inline-block;
+		" alt="">
+			<span style="font-size: 15px;" >دهکده زبان</span>
+				</a>
+
+			</td>
+			<td class="p-3 text-center d-none d-md-table-cell">
+			<span class="state text-white p-2  text-danger" style="font-weight: bold;">ارسال برای اصلاح</span>
+			</td>
+			<td class="p-3 d-none d-md-table-cell text-center">1398/4/5</td>
+			<td class="p-3 d-none d-md-table-cell text-center">1398/5/10</td>
+			<td class="p-3 text-center">
+				<button>ویرایش</button>
+				<button class="remove">
+					<i class="fa fa-trash" style="font-size: 15px;margin-right: 5px;"></i></button>
+			</td>
+		</tr>
+
+<tr class="">
+			<td class="p-3 text-center d-none d-md-table-cell">4</td>	
+
+			<td class="pt-1 text-center">
+				<a href="" class="w-100 m-0">
+		<img src="icons/cover_128.png" width="40px;" style="display: inline-block;
+		" alt="">
+			<span style="font-size: 15px;" >مزرعه شمالی</span>
+				</a>
+
+			</td>
+			<td class="p-3 text-center d-none d-md-table-cell">
+			<span class="state text-white p-2  text-success" style="font-weight: bold;">منتشر شده</span>
+			</td>
+			<td class="p-3 d-none d-md-table-cell text-center">1398/4/5</td>
+			<td class="p-3 d-none d-md-table-cell text-center">---</td>
+			<td class="p-3 text-center">
+				<button>ویرایش</button>
+				<button class="remove">
+					<i class="fa fa-trash" style="font-size: 15px;margin-right: 5px;"></i></button>
+			</td>
+		</tr>
+
+
+		</tbody>
+	</table>
+	
+</div>
+  </body>
+</html>
